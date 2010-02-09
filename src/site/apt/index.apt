@@ -1,0 +1,21 @@
+ ----
+ Spexregister Reports
+ ----
+ 
+Installation
+
+  Follow these steps:
+
+   * Install Tomcat
+
+   * Install MySQL
+
+   * Create JS user
+
+   * Install JasperServer (it might be necessary to import sample data to get the base structure)
+
+   * Install iReport
+
+   * Connect iReport to JasperServer (jasperadmin/jasperadmin)
+
+   []

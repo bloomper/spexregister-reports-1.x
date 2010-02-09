@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Spexregister Reports">
+    <bannerLeft>
+        <name>FGV</name>
+        <href>http://fgv.nu</href>
+        <src>images/banner_logo.png</src>
+    </bannerLeft>
+    <publishDate format="yyyy-MM-dd"/>
+    <version/>
+    <body>
+        <menu name="Spexregister Reports Project">
+            <item name="Release Notes" href="release-notes.html"/>
+            <item name="Javadocs" href="apidocs/"/>
+        </menu>
+        <menu ref="reports"/>
+    </body>
+</project>
