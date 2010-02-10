@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="address_labels" columnCount="3" pageWidth="595" pageHeight="842" columnWidth="198" leftMargin="0" rightMargin="0" topMargin="9" bottomMargin="9" whenResourceMissingType="Empty">
-	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
-	<queryString language="xPath">
-		<![CDATA[/SpexareItems/Spexare]]>
-	</queryString>
-	<field name="FullName" class="java.lang.String">
-		<fieldDescription><![CDATA[FullName]]></fieldDescription>
-	</field>
-	<field name="StreetAddress" class="java.lang.String">
-		<fieldDescription><![CDATA[StreetAddress]]></fieldDescription>
-	</field>
-	<field name="PostalCode" class="java.lang.String">
-		<fieldDescription><![CDATA[PostalCode]]></fieldDescription>
-	</field>
-	<field name="PostalAddress" class="java.lang.String">
-		<fieldDescription><![CDATA[PostalAddress]]></fieldDescription>
-	</field>
-	<field name="Country" class="java.lang.String">
-		<fieldDescription><![CDATA[Country]]></fieldDescription>
-	</field>
-	<detail>
-		<band height="103" splitType="Stretch">
-			<textField isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="15" y="0" width="183" height="30"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{FullName}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="15" y="30" width="183" height="22"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="15" y="52" width="183" height="20"/>
-				<textElement verticalAlignment="Bottom">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalCode}.concat(" ").concat($F{PostalAddress})]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="15" y="72" width="183" height="31"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{Country}]]></textFieldExpression>
-			</textField>
-		</band>
-	</detail>
+  <property name="ireport.zoom" value="1.0"/>
+  <property name="ireport.x" value="0"/>
+  <property name="ireport.y" value="0"/>
+  <queryString language="xPath">
+    <![CDATA[/SpexareItems/Spexare]]>
+  </queryString>
+  <field name="FullName" class="java.lang.String">
+    <fieldDescription><![CDATA[FullName]]></fieldDescription>
+  </field>
+  <field name="StreetAddress" class="java.lang.String">
+    <fieldDescription><![CDATA[StreetAddress]]></fieldDescription>
+  </field>
+  <field name="PostalCode" class="java.lang.String">
+    <fieldDescription><![CDATA[PostalCode]]></fieldDescription>
+  </field>
+  <field name="PostalAddress" class="java.lang.String">
+    <fieldDescription><![CDATA[PostalAddress]]></fieldDescription>
+  </field>
+  <field name="Country" class="java.lang.String">
+    <fieldDescription><![CDATA[Country]]></fieldDescription>
+  </field>
+  <detail>
+    <band height="103" splitType="Stretch">
+      <textField isBlankWhenNull="true">
+        <reportElement stretchType="RelativeToTallestObject" x="15" y="0" width="183" height="30"/>
+        <textElement verticalAlignment="Bottom">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression class="java.lang.String"><![CDATA[$F{FullName}]]></textFieldExpression>
+      </textField>
+      <textField isBlankWhenNull="true">
+        <reportElement stretchType="RelativeToTallestObject" x="15" y="30" width="183" height="22"/>
+        <textElement verticalAlignment="Bottom">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
+      </textField>
+      <textField isBlankWhenNull="true">
+        <reportElement stretchType="RelativeToTallestObject" x="15" y="52" width="183" height="20"/>
+        <textElement verticalAlignment="Bottom">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression class="java.lang.String"><![CDATA[$F{PostalCode}.concat(" ").concat($F{PostalAddress})]]></textFieldExpression>
+      </textField>
+      <textField isBlankWhenNull="true">
+        <reportElement stretchType="RelativeToTallestObject" x="15" y="72" width="183" height="31"/>
+        <textElement verticalAlignment="Middle">
+          <font fontName="Arial" isBold="true"/>
+        </textElement>
+        <textFieldExpression class="java.lang.String"><![CDATA[$F{Country}]]></textFieldExpression>
+      </textField>
+    </band>
+  </detail>
 </jasperReport>
