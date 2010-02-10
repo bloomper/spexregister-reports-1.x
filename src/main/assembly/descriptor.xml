@@ -8,10 +8,11 @@
   </formats>
   <fileSets>
     <fileSet>
-      <directory>src/main/resources/reports</directory>
+      <directory>src/main/resources</directory>
       <outputDirectory>/</outputDirectory>
       <includes>
         <include>*.jrxml</include>
+        <include>*.properties</include>
       </includes>
     </fileSet>
   </fileSets>
