@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlutonList>
+  <Header>
+    <Title>Chalmersspexet Bob</Title>
+    <SupplementalLine1>Mitt Rum, Chalmers Kårhus</SupplementalLine1>
+    <SupplementalLine2>Emil Oförvägen 1A, 412 58 Göteborg</SupplementalLine2>
+    <SupplementalLine3>bobspexet@chs.chalmers.se, 031-16 46 67</SupplementalLine3>
+  </Header>
+  <SpexareItems>
+    <Spexare>
+      <Role>Inspextor</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Directeur</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Festdirecteur</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Casseur</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Upplysare</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>PR-chef</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Scenmästare</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Ljusmästare</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Arkitekt</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Producent</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Skivkommitté</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Sömmerska</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Författare</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Författare</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Författare</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role></Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Ensemble</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Ensemble</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Ensemble</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+    <Spexare>
+      <Role>Orkester</Role>
+      <FirstName>Anders</FirstName>
+      <LastName>Jacobsson</LastName>
+      <NickName>Colgate</NickName>
+      <StreetAddress>Kikåsgatan 3a</StreetAddress>
+      <PostalCode>431 64</PostalCode>
+      <PostalAddress>Mölndal</PostalAddress>
+      <PhoneHome>031-18 91 58</PhoneHome>
+      <PhoneMobile>0709-87 60 12</PhoneMobile>
+      <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+      <BirthDate>1972-06-06</BirthDate>
+    </Spexare>
+  </SpexareItems>
+</PlutonList>
