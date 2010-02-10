@@ -92,7 +92,7 @@
                 <descriptors>
                   <descriptor>src/main/assembly/descriptor.xml</descriptor>
                 </descriptors>
-                <finalName>spexregister_reports</finalName>
+                <finalName>spexregister</finalName>
                 <outputDirectory>target</outputDirectory>
                 <workDirectory>target/assembly/work</workDirectory>
               </configuration>
