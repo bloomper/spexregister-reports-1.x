@@ -17,5 +17,7 @@ Installation
    * Install iReport
 
    * Connect iReport to JasperServer (jasperadmin/jasperadmin)
+   
+   * Create subdirectory 'Register' under Reports
 
    []
