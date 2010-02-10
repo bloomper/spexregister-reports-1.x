@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="streck_list" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10" resourceBundle="streck_list" whenResourceMissingType="Key">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/SpexareItems/Spexare]]>
+	</queryString>
+	<field name="FullName" class="java.lang.String">
+		<fieldDescription><![CDATA[FullName]]></fieldDescription>
+	</field>
+	<title>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="30" backcolor="#CCCCFF"/>
+			</rectangle>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="180" height="30" backcolor="#CCCCFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="180" y="0" width="125" height="30" backcolor="#CCCCFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="305" y="0" width="125" height="30" backcolor="#CCCCFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="430" y="0" width="125" height="30" backcolor="#CCCCFF"/>
+			</rectangle>
+			<textField isBlankWhenNull="false">
+				<reportElement x="5" y="0" width="175" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="20" backcolor="#CCCCCC">
+					<printWhenExpression><![CDATA[new Boolean(($V{REPORT_COUNT} % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="0" width="180" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="180" y="0" width="125" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="305" y="0" width="125" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="430" y="0" width="125" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="5" y="0" width="175" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{FullName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
