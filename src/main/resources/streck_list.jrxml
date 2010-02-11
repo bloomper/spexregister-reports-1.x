@@ -12,23 +12,23 @@
 	<title>
 		<band height="30" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="555" height="30" backcolor="#CCCCFF"/>
+				<reportElement x="0" y="0" width="555" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
 		</band>
 	</title>
 	<columnHeader>
 		<band height="30" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="180" height="30" backcolor="#CCCCFF"/>
+				<reportElement x="0" y="0" width="180" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
 			<rectangle>
-				<reportElement x="180" y="0" width="125" height="30" backcolor="#CCCCFF"/>
+				<reportElement x="180" y="0" width="125" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
 			<rectangle>
-				<reportElement x="305" y="0" width="125" height="30" backcolor="#CCCCFF"/>
+				<reportElement x="305" y="0" width="125" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
 			<rectangle>
-				<reportElement x="430" y="0" width="125" height="30" backcolor="#CCCCFF"/>
+				<reportElement x="430" y="0" width="125" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
 			<textField isBlankWhenNull="false">
 				<reportElement x="5" y="0" width="175" height="30"/>

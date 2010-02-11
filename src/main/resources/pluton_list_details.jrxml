@@ -41,6 +41,14 @@
 	</field>
 	<detail>
 		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="575" height="30" backcolor="#CCCCCC">
+					<printWhenExpression><![CDATA[new Boolean(($V{REPORT_COUNT} % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="0" y="0" width="74" height="15"/>
 				<textElement>
