@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spexare>
+  <FirstName>Anders</FirstName>
+  <LastName>Jacobsson</LastName>
+  <NickName>Colgate</NickName>
+  <StreetAddress>Kikåsgatan 3a</StreetAddress>
+  <PostalCode>431 64</PostalCode>
+  <PostalAddress>Mölndal</PostalAddress>
+  <Country>Sverige</Country>
+  <PhoneHome>031-18 91 58</PhoneHome>
+  <PhoneWork>031-747 60 12</PhoneWork>
+  <PhoneMobile>0709-87 60 12</PhoneMobile>
+  <PhoneOther/>
+  <EmailAddress>anders.jacobsson@gmail.com</EmailAddress>
+  <BirthDate>1972-06-06</BirthDate>
+  <SocialSecurityNumber/>
+  <ChalmersStudent>Ja</ChalmersStudent>
+  <Graduation>E 98</Graduation>
+  <Deceased>Nej</Deceased>
+  <PublishApproval>Ja</PublishApproval>
+  <WantCirculars>Ja</WantCirculars>
+  <UncertainAddress>Nej</UncertainAddress>
+  <Spouse>Carina Holmberg</Spouse>
+  <Comment/>
+  <Picture/>
+  <Memberships>
+  	<Membership kind="FGV">
+  		<Year>2009</Year>
+  	</Membership>
+  	<Membership kind="CING">
+  		<Year>2009</Year>
+  	</Membership>
+  </Memberships>
+  <Activities>
+  	<Activity>
+  		<SpexYear>2009</SpexYear>
+  		<SpexTitle>Test</SpexTitle>
+  		<Revival>Nej</Revival>
+  		<SpexCategory>Test</SpexCategory>
+  		<Functions>
+  			<Function>
+  				<Name>Test</Name>
+  				<FunctionCategory>Test</FunctionCategory>
+  				<Actor>
+  					<Role>Test</Role>
+  					<Vocal>Test</Vocal>
+  				</Actor>
+  			</Function>
+  	  </Functions>
+  	</Activity>
+  </Activities>
+</Spexare>
