@@ -3,9 +3,44 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
-	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["C:\\dev\\spexregister\\spexregister.reports\\src\\main\\resources\\"]]></defaultValueExpression>
-	</parameter>
+	<subDataset name="details_dataset" resourceBundle="pluton_list" whenResourceMissingType="Key">
+		<queryString language="xPath">
+			<![CDATA[]]>
+		</queryString>
+		<field name="Role" class="java.lang.String">
+			<fieldDescription><![CDATA[Role]]></fieldDescription>
+		</field>
+		<field name="FirstName" class="java.lang.String">
+			<fieldDescription><![CDATA[FirstName]]></fieldDescription>
+		</field>
+		<field name="LastName" class="java.lang.String">
+			<fieldDescription><![CDATA[LastName]]></fieldDescription>
+		</field>
+		<field name="NickName" class="java.lang.String">
+			<fieldDescription><![CDATA[NickName]]></fieldDescription>
+		</field>
+		<field name="StreetAddress" class="java.lang.String">
+			<fieldDescription><![CDATA[StreetAddress]]></fieldDescription>
+		</field>
+		<field name="PostalCode" class="java.lang.String">
+			<fieldDescription><![CDATA[PostalCode]]></fieldDescription>
+		</field>
+		<field name="PostalAddress" class="java.lang.String">
+			<fieldDescription><![CDATA[PostalAddress]]></fieldDescription>
+		</field>
+		<field name="EmailAddress" class="java.lang.String">
+			<fieldDescription><![CDATA[EmailAddress]]></fieldDescription>
+		</field>
+		<field name="PhoneMobile" class="java.lang.String">
+			<fieldDescription><![CDATA[PhoneMobile]]></fieldDescription>
+		</field>
+		<field name="PhoneHome" class="java.lang.String">
+			<fieldDescription><![CDATA[PhoneHome]]></fieldDescription>
+		</field>
+		<field name="BirthDate" class="java.lang.String">
+			<fieldDescription><![CDATA[BirthDate]]></fieldDescription>
+		</field>
+	</subDataset>
 	<queryString language="xPath">
 		<![CDATA[/PlutonList/Header]]>
 	</queryString>
@@ -55,11 +90,87 @@
 	</title>
 	<detail>
 		<band height="752" splitType="Stretch">
-			<subreport>
-				<reportElement x="0" y="0" width="575" height="752"/>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/PlutonList/SpexareItems")]]></dataSourceExpression>
-				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "pluton_list_details.jasper"]]></subreportExpression>
-			</subreport>
+			<componentElement>
+				<reportElement x="0" y="0" width="575" height="30"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="details_dataset">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/PlutonList/SpexareItems/Spexare")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="30" width="575">
+						<rectangle>
+							<reportElement x="0" y="0" width="575" height="30" backcolor="#CCCCCC">
+								<printWhenExpression><![CDATA[new Boolean(($V{REPORT_COUNT} % 2) == 1)]]></printWhenExpression>
+							</reportElement>
+							<graphicElement>
+								<pen lineWidth="0.0"/>
+							</graphicElement>
+						</rectangle>
+						<textField isBlankWhenNull="true">
+							<reportElement x="75" y="0" width="100" height="15"/>
+							<textElement>
+								<font fontName="Arial" size="9"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{FirstName}.concat(" ").concat($F{LastName})]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="175" y="0" width="75" height="15"/>
+							<textElement>
+								<font fontName="Arial" size="9"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{BirthDate}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="250" y="0" width="115" height="15"/>
+							<textElement>
+								<font fontName="Arial" size="9"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="365" y="0" width="130" height="15"/>
+							<textElement>
+								<font fontName="Arial" size="9"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{EmailAddress}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="495" y="0" width="80" height="15"/>
+							<textElement>
+								<font fontName="Arial" size="9"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneMobile}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="75" y="15" width="100" height="15"/>
+							<textElement>
+								<font fontName="Arial" size="9"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{NickName}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="250" y="15" width="115" height="15"/>
+							<textElement>
+								<font fontName="Arial" size="9"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalCode}.concat(" ").concat($F{PostalAddress})]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="495" y="15" width="80" height="15"/>
+							<textElement>
+								<font fontName="Arial" size="9"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneHome}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="0" y="0" width="75" height="15"/>
+							<textElement>
+								<font fontName="Arial" size="9"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{Role}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
 		</band>
 	</detail>
 </jasperReport>
