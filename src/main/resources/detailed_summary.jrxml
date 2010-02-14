@@ -3,9 +3,14 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
-	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["C:\\dev\\spexregister\\spexregister.reports\\src\\main\\resources\\"]]></defaultValueExpression>
-	</parameter>
+	<subDataset name="fgv_memberships_dataset" resourceBundle="detailed_summary" whenResourceMissingType="Key">
+		<queryString language="xPath">
+			<![CDATA[]]>
+		</queryString>
+		<field name="MembershipYear" class="java.lang.String">
+			<fieldDescription><![CDATA[.]]></fieldDescription>
+		</field>
+	</subDataset>
 	<queryString language="xPath">
 		<![CDATA[/Spexare]]>
 	</queryString>
@@ -396,14 +401,28 @@
 			<line>
 				<reportElement x="0" y="300" width="555" height="1"/>
 			</line>
-			<subreport>
-				<reportElement x="0" y="300" width="555" height="69"/>
-				<subreportParameter name="MEMBERSHIPS_KIND">
-					<subreportParameterExpression><![CDATA["FGV"]]></subreportParameterExpression>
-				</subreportParameter>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Memberships")]]></dataSourceExpression>
-				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "detailed_summary_memberships_details.jasper"]]></subreportExpression>
-			</subreport>
+			<componentElement>
+				<reportElement x="0" y="321" width="555" height="20"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Horizontal">
+					<datasetRun subDataset="fgv_memberships_dataset">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/Spexare/Memberships/Membership[@kind='FGV']/Year")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="20" width="555">
+						<textField>
+							<reportElement x="0" y="0" width="95" height="20"/>
+							<textElement/>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{MembershipYear}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="302" width="555" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[msg($R{title.memberships}, "FGV")]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
 </jasperReport>
