@@ -54,9 +54,9 @@
 		</band>
 	</title>
 	<detail>
-		<band height="30" splitType="Stretch">
+		<band height="752" splitType="Stretch">
 			<subreport>
-				<reportElement x="0" y="0" width="575" height="30"/>
+				<reportElement x="0" y="0" width="575" height="752"/>
 				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/PlutonList/SpexareItems")]]></dataSourceExpression>
 				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "pluton_list_details.jasper"]]></subreportExpression>
 			</subreport>
