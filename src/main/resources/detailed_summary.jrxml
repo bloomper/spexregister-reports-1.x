@@ -189,11 +189,13 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.spouse}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="0" width="263" height="15"/>
+				<reportElement x="0" y="180" width="95" height="15" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{Comment} != null && !$F{Comment}.equals("")]]></printWhenExpression>
+				</reportElement>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="false"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{FirstName}]]></textFieldExpression>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.comment}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="369" y="0" width="116" height="15"/>
@@ -201,13 +203,6 @@
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.birthDate}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="0" width="70" height="15"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="false"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{BirthDate}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="369" y="15" width="116" height="15"/>
@@ -259,53 +254,11 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.uncertainAddress}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="15" width="70" height="15"/>
+				<reportElement x="95" y="0" width="263" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Arial" isBold="false"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{SocialSecurityNumber}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="30" width="70" height="15"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="false"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{ChalmersStudent}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="45" width="70" height="15"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="false"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{Graduation}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="60" width="70" height="15"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="false"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{Deceased}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="75" width="70" height="15"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="false"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{PublishApproval}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="90" width="70" height="15"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="false"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{WantCirculars}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="105" width="70" height="15"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="false"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{UncertainAddress}]]></textFieldExpression>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{FirstName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="95" y="15" width="263" height="15"/>
@@ -385,20 +338,67 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Spouse}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="180" width="95" height="15" isRemoveLineWhenBlank="true">
-					<printWhenExpression><![CDATA[$F{Comment} != null && !$F{Comment}.equals("")]]></printWhenExpression>
-				</reportElement>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.comment}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
 				<reportElement x="0" y="195" width="358" height="105" isRemoveLineWhenBlank="true"/>
 				<textElement>
 					<font fontName="Arial" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Comment}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="0" width="70" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{BirthDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="485" y="15" width="70" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{SocialSecurityNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="30" width="70" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ChalmersStudent}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="45" width="70" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Graduation}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="60" width="70" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Deceased}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="75" width="70" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{PublishApproval}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="90" width="70" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{WantCirculars}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="105" width="70" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{UncertainAddress}]]></textFieldExpression>
 			</textField>
 			<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
 				<reportElement x="385" y="127" width="140" height="173" isRemoveLineWhenBlank="true">
