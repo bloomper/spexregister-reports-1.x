@@ -24,32 +24,34 @@
   <Comment/>
   <Picture/>
   <Memberships>
-  	<Membership kind="FGV">
-  		<Year>2009</Year>
-  	</Membership>
     <Membership kind="FGV">
-        <Year>2010</Year>
+      <Year>2009</Year>
     </Membership>
-  	<Membership kind="CING">
-  		<Year>2009</Year>
-  	</Membership>
+    <Membership kind="FGV">
+      <Year>2010</Year>
+    </Membership>
+    <Membership kind="CING">
+      <Year>2009</Year>
+    </Membership>
   </Memberships>
   <Activities>
-  	<Activity>
-  		<SpexYear>2009</SpexYear>
-  		<SpexTitle>Test</SpexTitle>
-  		<Revival>Nej</Revival>
-  		<SpexCategory>Test</SpexCategory>
-  		<Functions>
-  			<Function>
-  				<Name>Test</Name>
-  				<FunctionCategory>Test</FunctionCategory>
-  				<Actor>
-  					<Role>Test</Role>
-  					<Vocal>Test</Vocal>
-  				</Actor>
-  			</Function>
-  	  </Functions>
-  	</Activity>
+    <Activity>
+      <Spex>
+        <Year>2009</Year>
+        <Title>Test</Title>
+        <Revival>Nej</Revival>
+        <Category>Test</Category>
+      </Spex>
+      <Functions>
+        <Function>
+          <Name>Test</Name>
+          <Category>Test</Category>
+          <Actor>
+            <Role>Test</Role>
+            <Vocal>Test</Vocal>
+          </Actor>
+        </Function>
+      </Functions>
+    </Activity>
   </Activities>
 </Spexare>
