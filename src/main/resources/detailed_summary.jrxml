@@ -421,9 +421,9 @@
 					<datasetRun subDataset="memberships_dataset">
 						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Memberships/Membership[@kind='FGV']/Year")]]></dataSourceExpression>
 					</datasetRun>
-					<jr:listContents height="15" width="555">
+					<jr:listContents height="15" width="55">
 						<textField isBlankWhenNull="true">
-							<reportElement x="0" y="0" width="95" height="15"/>
+							<reportElement x="0" y="0" width="55" height="15"/>
 							<textElement verticalAlignment="Middle">
 								<font fontName="Arial"/>
 							</textElement>
@@ -447,9 +447,9 @@
 					<datasetRun subDataset="memberships_dataset">
 						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Memberships/Membership[@kind='CING']/Year")]]></dataSourceExpression>
 					</datasetRun>
-					<jr:listContents height="15" width="555">
+					<jr:listContents height="15" width="55">
 						<textField isBlankWhenNull="true">
-							<reportElement x="0" y="0" width="95" height="15"/>
+							<reportElement x="0" y="0" width="55" height="15"/>
 							<textElement verticalAlignment="Middle">
 								<font fontName="Arial"/>
 							</textElement>

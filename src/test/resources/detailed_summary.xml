@@ -25,13 +25,67 @@
   <Picture/>
   <Memberships>
     <Membership kind="FGV">
-      <Year>2009</Year>
+      <Year>1990</Year>
     </Membership>
     <Membership kind="FGV">
-      <Year>2010</Year>
+      <Year>1991</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>1992</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>1993</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>1994</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>1995</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>1996</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>1997</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>1998</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>1999</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>2000</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>2001</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>2002</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>2003</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>2004</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>2005</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>2006</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>2007</Year>
+    </Membership>
+    <Membership kind="FGV">
+      <Year>2008</Year>
     </Membership>
     <Membership kind="CING">
       <Year>2009</Year>
+    </Membership>
+    <Membership kind="CING">
+      <Year>2011</Year>
     </Membership>
   </Memberships>
   <Activities>
