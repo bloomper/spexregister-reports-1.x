@@ -91,6 +91,12 @@
 	<field name="Picture" class="java.lang.String">
 		<fieldDescription><![CDATA[Picture]]></fieldDescription>
 	</field>
+	<field name="FgvMembershipsCount" class="java.lang.Integer">
+		<fieldDescription><![CDATA[count(Memberships/Membership[@kind='FGV']/Year)]]></fieldDescription>
+	</field>
+	<field name="CingMembershipsCount" class="java.lang.Integer">
+		<fieldDescription><![CDATA[count(Memberships/Membership[@kind='CING']/Year)]]></fieldDescription>
+	</field>
 	<pageHeader>
 		<band height="30" splitType="Stretch">
 			<textField isBlankWhenNull="true">
@@ -404,19 +410,23 @@
 				<reportElement x="385" y="127" width="140" height="173" isRemoveLineWhenBlank="true">
 					<printWhenExpression><![CDATA[new Boolean($F{Picture} != null && !$F{Picture}.equals(""))]]></printWhenExpression>
 				</reportElement>
-				<imageExpression class="java.lang.String"><![CDATA[new File($F{Picture})]]></imageExpression>
+				<imageExpression class="java.lang.String"><![CDATA[new java.net.URL($F{Picture})]]></imageExpression>
 			</image>
 		</band>
 		<band height="35" splitType="Prevent">
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="0" y="0" width="555" height="20" backcolor="#CCCCCC"/>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="20" isRemoveLineWhenBlank="true" backcolor="#CCCCCC">
+					<printWhenExpression><![CDATA[$F{FgvMembershipsCount} > 0]]></printWhenExpression>
+				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Arial" size="11" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[msg($R{title.memberships}, "FGV")]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="0" y="19" width="555" height="15"/>
+				<reportElement x="0" y="20" width="555" height="15" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{FgvMembershipsCount} > 0]]></printWhenExpression>
+				</reportElement>
 				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Horizontal">
 					<datasetRun subDataset="memberships_dataset">
 						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Memberships/Membership[@kind='FGV']/Year")]]></dataSourceExpression>
@@ -435,14 +445,18 @@
 		</band>
 		<band height="35" splitType="Prevent">
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="0" y="0" width="555" height="20" backcolor="#CCCCCC"/>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="20" isRemoveLineWhenBlank="true" backcolor="#CCCCCC">
+					<printWhenExpression><![CDATA[$F{CingMembershipsCount} > 0]]></printWhenExpression>
+				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Arial" size="11" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[msg($R{title.memberships}, "CING")]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="0" y="20" width="555" height="15"/>
+				<reportElement x="0" y="20" width="555" height="15" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{CingMembershipsCount} > 0]]></printWhenExpression>
+				</reportElement>
 				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Horizontal">
 					<datasetRun subDataset="memberships_dataset">
 						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Memberships/Membership[@kind='CING']/Year")]]></dataSourceExpression>
