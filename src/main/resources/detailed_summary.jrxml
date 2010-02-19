@@ -15,9 +15,15 @@
 		<queryString language="xPath">
 			<![CDATA[]]>
 		</queryString>
-		<field name="SpexYear" class="java.lang.String"/>
-		<field name="SpexTitle" class="java.lang.String"/>
-		<field name="SpexCategory" class="java.lang.String"/>
+		<field name="SpexYear" class="java.lang.String">
+			<fieldDescription><![CDATA[Spex/Year]]></fieldDescription>
+		</field>
+		<field name="SpexTitle" class="java.lang.String">
+			<fieldDescription><![CDATA[Spex/Title]]></fieldDescription>
+		</field>
+		<field name="SpexCategory" class="java.lang.String">
+			<fieldDescription><![CDATA[Spex/Category]]></fieldDescription>
+		</field>
 	</subDataset>
 	<queryString language="xPath">
 		<![CDATA[/Spexare]]>
@@ -509,6 +515,37 @@
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.activities.spex.category}]]></textFieldExpression>
 			</textField>
+			<componentElement>
+				<reportElement x="0" y="35" width="555" height="15"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="activities_dataset">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Activities/Activity")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="15" width="555">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="15"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial" isBold="false"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexYear}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="50" y="0" width="150" height="15"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial" isBold="false"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexTitle}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="435" y="0" width="120" height="15"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial" isBold="false"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexCategory}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
 		</band>
 	</detail>
 </jasperReport>

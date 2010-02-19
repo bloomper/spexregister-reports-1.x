@@ -107,5 +107,23 @@
         </Function>
       </Functions>
     </Activity>
+    <Activity>
+      <Spex>
+        <Year>2010</Year>
+        <Title>Test2</Title>
+        <Revival>Nej</Revival>
+        <Category>Test2</Category>
+      </Spex>
+      <Functions>
+        <Function>
+          <Name>Test2</Name>
+          <Category>Test2</Category>
+          <Actor>
+            <Role>Test2</Role>
+            <Vocal>Test2</Vocal>
+          </Actor>
+        </Function>
+      </Functions>
+    </Activity>
   </Activities>
 </Spexare>
