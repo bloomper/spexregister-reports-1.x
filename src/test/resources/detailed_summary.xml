@@ -100,10 +100,12 @@
         <Function>
           <Name>Test</Name>
           <Category>Test</Category>
-          <Actor>
-            <Role>Test</Role>
-            <Vocal>Test</Vocal>
-          </Actor>
+          <Actors>
+            <Actor>
+              <Role>Test</Role>
+              <Vocal>Test</Vocal>
+            </Actor>
+          </Actors>
         </Function>
       </Functions>
     </Activity>
@@ -118,10 +120,12 @@
         <Function>
           <Name>Test2</Name>
           <Category>Test2</Category>
-          <Actor>
-            <Role>Test2</Role>
-            <Vocal>Test2</Vocal>
-          </Actor>
+          <Actors>
+            <Actor>
+              <Role>Test2</Role>
+              <Vocal>Test2</Vocal>
+            </Actor>
+          </Actors>
         </Function>
       </Functions>
     </Activity>
