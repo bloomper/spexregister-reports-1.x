@@ -522,21 +522,21 @@
 						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Activities/Activity")]]></dataSourceExpression>
 					</datasetRun>
 					<jr:listContents height="15" width="555">
-						<textField>
+						<textField isBlankWhenNull="true">
 							<reportElement x="0" y="0" width="50" height="15"/>
 							<textElement verticalAlignment="Middle">
 								<font fontName="Arial" isBold="false"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexYear}]]></textFieldExpression>
 						</textField>
-						<textField>
+						<textField isBlankWhenNull="true">
 							<reportElement x="50" y="0" width="150" height="15"/>
 							<textElement verticalAlignment="Middle">
 								<font fontName="Arial" isBold="false"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexTitle}]]></textFieldExpression>
 						</textField>
-						<textField>
+						<textField isBlankWhenNull="true">
 							<reportElement x="435" y="0" width="120" height="15"/>
 							<textElement verticalAlignment="Middle">
 								<font fontName="Arial" isBold="false"/>
