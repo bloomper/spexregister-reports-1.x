@@ -21,14 +21,14 @@
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="0" width="50" height="15"/>
+				<reportElement x="0" y="0" width="30" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Year}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="50" y="0" width="140" height="15"/>
+				<reportElement x="30" y="0" width="140" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Arial"/>
 				</textElement>
@@ -42,7 +42,7 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Category}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="190" y="0" width="20" height="15"/>
+				<reportElement x="170" y="0" width="40" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Arial"/>
 				</textElement>

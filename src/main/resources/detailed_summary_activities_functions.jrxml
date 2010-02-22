@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="detailed_summary_activities_functions" language="groovy" pageWidth="235" pageHeight="802" columnWidth="235" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="detailed_summary" whenResourceMissingType="Key">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="detailed_summary_activities_functions" language="groovy" pageWidth="235" pageHeight="30" columnWidth="235" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="detailed_summary" whenResourceMissingType="Key">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<subDataset name="actors_dataset" resourceBundle="detailed_summary" whenResourceMissingType="Key">
+		<queryString language="xPath">
+			<![CDATA[.]]>
+		</queryString>
+		<field name="Role" class="java.lang.String">
+			<fieldDescription><![CDATA[Role]]></fieldDescription>
+		</field>
+		<field name="Vocal" class="java.lang.String">
+			<fieldDescription><![CDATA[Vocal]]></fieldDescription>
+		</field>
+	</subDataset>
 	<queryString language="xPath">
-		<![CDATA[/Functions/Function]]>
+		<![CDATA[.]]>
 	</queryString>
 	<field name="Name" class="java.lang.String">
 		<fieldDescription><![CDATA[Name]]></fieldDescription>
 	</field>
+	<field name="ActorsCount" class="java.lang.Integer">
+		<fieldDescription><![CDATA[count(Actors/Actor)]]></fieldDescription>
+	</field>
 	<detail>
-		<band height="15" splitType="Stretch">
+		<band height="30" splitType="Stretch">
 			<textField isBlankWhenNull="true">
 				<reportElement x="0" y="0" width="235" height="15"/>
 				<textElement verticalAlignment="Middle">
@@ -18,6 +32,25 @@
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Name}]]></textFieldExpression>
 			</textField>
+			<componentElement>
+				<reportElement x="0" y="15" width="235" height="15" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{ActorsCount} > 0]]></printWhenExpression>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="actors_dataset">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Function/Actors/Actor")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="15" width="235">
+						<textField isBlankWhenNull="true">
+							<reportElement isPrintRepeatedValues="false" x="0" y="0" width="235" height="15" isRemoveLineWhenBlank="true"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial" size="8"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[(($F{Role} != null && !$F{Role}.equals("")) ? $R{column.activities.function.actor.role}.concat(" ").concat($F{Role}).concat("  ") : "") + (($F{Vocal} != null && !$F{Vocal}.equals("")) ? $R{column.activities.function.actor.vocal}.concat(" ").concat($F{Vocal}) : "")]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
 		</band>
 	</detail>
 </jasperReport>
