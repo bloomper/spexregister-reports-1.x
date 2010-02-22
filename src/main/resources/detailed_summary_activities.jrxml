@@ -17,7 +17,7 @@
 				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "detailed_summary_activities_spex.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="320" y="0" width="235" height="15"/>
+				<reportElement isPrintRepeatedValues="false" x="320" y="0" width="235" height="15"/>
 				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activities/Activity/Functions/Function")]]></dataSourceExpression>
 				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "detailed_summary_activities_functions.jasper"]]></subreportExpression>
 			</subreport>
