@@ -127,6 +127,16 @@
             </Actor>
           </Actors>
         </Function>
+        <Function>
+          <Name>Test3</Name>
+          <Category>Test3</Category>
+          <Actors>
+            <Actor>
+              <Role>Test3</Role>
+              <Vocal>Test3</Vocal>
+            </Actor>
+          </Actors>
+        </Function>
       </Functions>
     </Activity>
   </Activities>
