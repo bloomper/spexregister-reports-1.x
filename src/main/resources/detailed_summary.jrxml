@@ -512,8 +512,8 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.activities.function.name}]]></textFieldExpression>
 			</textField>
 			<subreport>
-				<reportElement isPrintRepeatedValues="false" x="0" y="35" width="555" height="15"/>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Activities")]]></dataSourceExpression>
+				<reportElement x="0" y="35" width="555" height="15"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Activities/Activity")]]></dataSourceExpression>
 				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "detailed_summary_activities.jasper"]]></subreportExpression>
 			</subreport>
 		</band>

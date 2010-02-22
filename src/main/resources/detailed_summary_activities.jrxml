@@ -3,6 +3,23 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<subDataset name="spex_dataset" resourceBundle="detailed_summary" whenResourceMissingType="Key">
+		<queryString language="xPath">
+			<![CDATA[.]]>
+		</queryString>
+		<field name="SpexYear" class="java.lang.String">
+			<fieldDescription><![CDATA[Year]]></fieldDescription>
+		</field>
+		<field name="SpexTitle" class="java.lang.String">
+			<fieldDescription><![CDATA[Title]]></fieldDescription>
+		</field>
+		<field name="SpexRevival" class="java.lang.String">
+			<fieldDescription><![CDATA[Revival]]></fieldDescription>
+		</field>
+		<field name="SpexCategory" class="java.lang.String">
+			<fieldDescription><![CDATA[Category]]></fieldDescription>
+		</field>
+	</subDataset>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["C:\\dev\\spexregister\\spexregister.reports\\src\\main\\resources\\"]]></defaultValueExpression>
 	</parameter>
@@ -11,14 +28,47 @@
 	</queryString>
 	<detail>
 		<band height="15" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="0" width="320" height="15"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="spex_dataset">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activity/Spex")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="15" width="320">
+						<textField isBlankWhenNull="true">
+							<reportElement x="0" y="0" width="30" height="15"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexYear}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="30" y="0" width="140" height="15"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexTitle}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="170" y="0" width="40" height="15"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexRevival}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement x="210" y="0" width="110" height="15"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial"/>
+							</textElement>
+							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexCategory}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
 			<subreport>
-				<reportElement isPrintRepeatedValues="false" x="0" y="0" width="320" height="15"/>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activities/Activity/Spex")]]></dataSourceExpression>
-				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "detailed_summary_activities_spex.jasper"]]></subreportExpression>
-			</subreport>
-			<subreport>
-				<reportElement isPrintRepeatedValues="false" x="320" y="0" width="235" height="15"/>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activities/Activity/Functions/Function")]]></dataSourceExpression>
+				<reportElement x="320" y="0" width="235" height="15"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activity/Functions/Function")]]></dataSourceExpression>
 				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "detailed_summary_activities_functions.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
