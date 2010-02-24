@@ -42,7 +42,7 @@
 	<detail>
 		<band height="20" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="555" height="20" backcolor="#CCCCCC">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="20" backcolor="#CCCCCC">
 					<printWhenExpression><![CDATA[new Boolean(($V{REPORT_COUNT} % 2) == 0)]]></printWhenExpression>
 				</reportElement>
 				<graphicElement>
@@ -50,19 +50,19 @@
 				</graphicElement>
 			</rectangle>
 			<rectangle>
-				<reportElement mode="Transparent" x="0" y="0" width="180" height="20" backcolor="#FFFFFF"/>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="180" height="20" backcolor="#FFFFFF"/>
 			</rectangle>
 			<rectangle>
-				<reportElement mode="Transparent" x="180" y="0" width="125" height="20" backcolor="#FFFFFF"/>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="180" y="0" width="125" height="20" backcolor="#FFFFFF"/>
 			</rectangle>
 			<rectangle>
-				<reportElement mode="Transparent" x="305" y="0" width="125" height="20" backcolor="#FFFFFF"/>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="305" y="0" width="125" height="20" backcolor="#FFFFFF"/>
 			</rectangle>
 			<rectangle>
-				<reportElement mode="Transparent" x="430" y="0" width="125" height="20" backcolor="#FFFFFF"/>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="430" y="0" width="125" height="20" backcolor="#FFFFFF"/>
 			</rectangle>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="5" y="0" width="175" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="5" y="-1" width="175" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>

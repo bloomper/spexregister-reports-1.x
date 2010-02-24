@@ -23,7 +23,7 @@
 	<detail>
 		<band height="20" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="360" height="20" backcolor="#CCCCCC">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="360" height="20" backcolor="#CCCCCC">
 					<printWhenExpression><![CDATA[new Boolean(($V{REPORT_COUNT} % 2) == 0)]]></printWhenExpression>
 				</reportElement>
 				<graphicElement>
@@ -31,7 +31,7 @@
 				</graphicElement>
 			</rectangle>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="0" y="0" width="360" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="360" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
