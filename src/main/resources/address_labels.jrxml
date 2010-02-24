@@ -26,28 +26,28 @@
 			<textField isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToTallestObject" x="15" y="0" width="183" height="30"/>
 				<textElement verticalAlignment="Bottom">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{FullName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToTallestObject" x="15" y="30" width="183" height="22"/>
 				<textElement verticalAlignment="Bottom">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToTallestObject" x="15" y="52" width="183" height="20"/>
 				<textElement verticalAlignment="Bottom">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalCode}.concat(" ").concat($F{PostalAddress})]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToTallestObject" x="15" y="72" width="183" height="31"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Country}]]></textFieldExpression>
 			</textField>

@@ -71,140 +71,140 @@
 			<textField>
 				<reportElement mode="Opaque" x="0" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.firstName}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="108" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.lastName}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="216" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.nickName}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="324" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.streetAddress}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="432" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.postalCode}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="540" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.postalAddress}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="648" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.country}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="756" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.phoneHome}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="864" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.phoneWork}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="972" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.phoneMobile}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="1080" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.phoneOther}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="1188" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.emailAddress}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="1296" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.birthDate}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="1404" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.socialSecurityNumber}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="1512" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.chalmersStudent}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="1620" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.graduation}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="1728" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.deceased}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="1836" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.publishApproval}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="1944" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.wantCirculars}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="2052" y="0" width="108" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.uncertainAddress}]]></textFieldExpression>
 			</textField>
@@ -223,140 +223,140 @@
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="0" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{FirstName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="108" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{LastName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="216" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{NickName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="324" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="432" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalCode}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="540" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalAddress}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="648" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Country}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="756" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneHome}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="864" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneWork}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="972" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneMobile}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="1080" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneOther}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="1188" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{EmailAddress}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="1296" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{BirthDate}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="1404" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{SocialSecurityNumber}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="1512" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{ChalmersStudent}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="1620" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Graduation}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="1728" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Deceased}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="1836" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PublishApproval}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="1944" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{WantCirculars}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="2052" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{UncertainAddress}]]></textFieldExpression>
 			</textField>

@@ -33,7 +33,7 @@
 			<textField isBlankWhenNull="false">
 				<reportElement x="5" y="0" width="175" height="30"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" size="18" isBold="true"/>
+					<font fontName="SansSerif" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.name}]]></textFieldExpression>
 			</textField>
@@ -64,7 +64,7 @@
 			<textField isStretchWithOverflow="true">
 				<reportElement x="5" y="0" width="175" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{FullName}]]></textFieldExpression>
 			</textField>

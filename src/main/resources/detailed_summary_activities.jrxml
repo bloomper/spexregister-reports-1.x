@@ -30,7 +30,7 @@
 		<band height="15" splitType="Stretch">
 			<componentElement>
 				<reportElement x="0" y="0" width="320" height="15"/>
-				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
 					<datasetRun subDataset="spex_dataset">
 						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activity/Spex")]]></dataSourceExpression>
 					</datasetRun>
@@ -38,28 +38,28 @@
 						<textField isBlankWhenNull="true">
 							<reportElement x="0" y="0" width="30" height="15"/>
 							<textElement verticalAlignment="Middle">
-								<font fontName="Arial"/>
+								<font fontName="SansSerif"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexYear}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
 							<reportElement x="30" y="0" width="140" height="15"/>
 							<textElement verticalAlignment="Middle">
-								<font fontName="Arial"/>
+								<font fontName="SansSerif"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexTitle}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
 							<reportElement x="170" y="0" width="40" height="15"/>
 							<textElement verticalAlignment="Middle">
-								<font fontName="Arial"/>
+								<font fontName="SansSerif"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexRevival}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
 							<reportElement x="210" y="0" width="110" height="15"/>
 							<textElement verticalAlignment="Middle">
-								<font fontName="Arial"/>
+								<font fontName="SansSerif"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{SpexCategory}]]></textFieldExpression>
 						</textField>

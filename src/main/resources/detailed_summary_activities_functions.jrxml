@@ -28,7 +28,7 @@
 			<textField isBlankWhenNull="true">
 				<reportElement x="0" y="0" width="235" height="15"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Name}]]></textFieldExpression>
 			</textField>
@@ -44,7 +44,7 @@
 						<textField isBlankWhenNull="true">
 							<reportElement isPrintRepeatedValues="false" x="0" y="0" width="235" height="15" isRemoveLineWhenBlank="true"/>
 							<textElement verticalAlignment="Middle">
-								<font fontName="Arial" size="8"/>
+								<font fontName="SansSerif" size="8"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[(($F{Role} != null && !$F{Role}.equals("")) ? $R{column.activities.function.actor.role}.concat(" ").concat($F{Role}).concat("  ") : "") + (($F{Vocal} != null && !$F{Vocal}.equals("")) ? $R{column.activities.function.actor.vocal}.concat(" ").concat($F{Vocal}) : "")]]></textFieldExpression>
 						</textField>

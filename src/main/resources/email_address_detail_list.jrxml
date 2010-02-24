@@ -14,7 +14,7 @@
 			<textField>
 				<reportElement mode="Opaque" x="0" y="0" width="360" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.emailAddress}]]></textFieldExpression>
 			</textField>
@@ -33,7 +33,7 @@
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="0" y="0" width="360" height="20"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial"/>
+					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{EmailAddress}]]></textFieldExpression>
 			</textField>
