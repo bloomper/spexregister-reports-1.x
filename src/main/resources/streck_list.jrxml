@@ -19,8 +19,15 @@
 	<columnHeader>
 		<band height="30" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="180" height="30" backcolor="#CCCCCC"/>
+				<reportElement mode="Opaque" x="0" y="0" width="180" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
+			<textField isBlankWhenNull="false">
+				<reportElement mode="Opaque" x="5" y="1" width="175" height="29" backcolor="#CCCCCC"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.name}]]></textFieldExpression>
+			</textField>
 			<rectangle>
 				<reportElement x="180" y="0" width="125" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
@@ -30,13 +37,6 @@
 			<rectangle>
 				<reportElement x="430" y="0" width="125" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
-			<textField isBlankWhenNull="false">
-				<reportElement x="5" y="0" width="175" height="30"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="18" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.name}]]></textFieldExpression>
-			</textField>
 		</band>
 	</columnHeader>
 	<detail>
@@ -62,7 +62,7 @@
 				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="430" y="0" width="125" height="20" backcolor="#FFFFFF"/>
 			</rectangle>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToTallestObject" x="5" y="-1" width="175" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="5" y="0" width="175" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
