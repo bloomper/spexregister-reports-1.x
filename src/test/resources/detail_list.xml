@@ -20,6 +20,7 @@
     <Deceased>Nej</Deceased>
     <PublishApproval>Ja</PublishApproval>
     <WantCirculars>Ja</WantCirculars>
+    <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
   </Spexare>
   <Spexare>
@@ -42,6 +43,7 @@
     <Deceased>Nej</Deceased>
     <PublishApproval>Ja</PublishApproval>
     <WantCirculars>Ja</WantCirculars>
+    <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
   </Spexare>
   <Spexare>
@@ -64,6 +66,7 @@
     <Deceased>Nej</Deceased>
     <PublishApproval>Ja</PublishApproval>
     <WantCirculars>Ja</WantCirculars>
+    <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
   </Spexare>
   <Spexare>
@@ -86,6 +89,7 @@
     <Deceased>Nej</Deceased>
     <PublishApproval>Ja</PublishApproval>
     <WantCirculars>Ja</WantCirculars>
+    <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
   </Spexare>
   <Spexare>
@@ -108,6 +112,7 @@
     <Deceased>Nej</Deceased>
     <PublishApproval>Ja</PublishApproval>
     <WantCirculars>Ja</WantCirculars>
+    <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
   </Spexare>
 </SpexareItems>

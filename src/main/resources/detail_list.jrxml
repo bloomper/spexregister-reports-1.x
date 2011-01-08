@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="detail_list" language="groovy" columnCount="20" pageWidth="2200" pageHeight="595" orientation="Landscape" columnWidth="108" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10" resourceBundle="detail_list" whenResourceMissingType="Key">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="detail_list" language="groovy" columnCount="20" pageWidth="2308" pageHeight="595" orientation="Landscape" columnWidth="113" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10" resourceBundle="detail_list" whenResourceMissingType="Key">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="1033"/>
+	<property name="ireport.x" value="1613"/>
 	<property name="ireport.y" value="0"/>
 	<queryString language="xPath">
 		<![CDATA[/SpexareItems/Spexare]]>
@@ -62,6 +62,9 @@
 	</field>
 	<field name="WantCirculars" class="java.lang.String">
 		<fieldDescription><![CDATA[WantCirculars]]></fieldDescription>
+	</field>
+	<field name="WantEmailCirculars" class="java.lang.String">
+		<fieldDescription><![CDATA[WantEmailCirculars]]></fieldDescription>
 	</field>
 	<field name="UncertainAddress" class="java.lang.String">
 		<fieldDescription><![CDATA[UncertainAddress]]></fieldDescription>
@@ -206,6 +209,13 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.wantEmailCirculars}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="2160" y="0" width="108" height="20" backcolor="#CCCCCC"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.uncertainAddress}]]></textFieldExpression>
 			</textField>
 		</band>
@@ -213,7 +223,7 @@
 	<detail>
 		<band height="20" splitType="Stretch">
 			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="2160" height="20" backcolor="#CCCCCC">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="2268" height="20" backcolor="#CCCCCC">
 					<printWhenExpression><![CDATA[new Boolean(($V{REPORT_COUNT} % 2) == 0)]]></printWhenExpression>
 				</reportElement>
 				<graphicElement>
@@ -355,6 +365,13 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="2052" y="0" width="108" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{WantEmailCirculars}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2160" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>

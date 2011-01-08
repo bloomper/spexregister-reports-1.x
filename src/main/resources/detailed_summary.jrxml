@@ -74,6 +74,9 @@
 	<field name="WantCirculars" class="java.lang.String">
 		<fieldDescription><![CDATA[WantCirculars]]></fieldDescription>
 	</field>
+	<field name="WantEmailCirculars" class="java.lang.String">
+		<fieldDescription><![CDATA[WantEmailCirculars]]></fieldDescription>
+	</field>
 	<field name="UncertainAddress" class="java.lang.String">
 		<fieldDescription><![CDATA[UncertainAddress]]></fieldDescription>
 	</field>
@@ -252,6 +255,13 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.wantEmailCirculars}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="369" y="120" width="116" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.uncertainAddress}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -399,10 +409,17 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{WantEmailCirculars}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="120" width="70" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="false"/>
+				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{UncertainAddress}]]></textFieldExpression>
 			</textField>
 			<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
-				<reportElement x="385" y="127" width="140" height="173" isRemoveLineWhenBlank="true">
+				<reportElement x="385" y="150" width="140" height="150" isRemoveLineWhenBlank="true">
 					<printWhenExpression><![CDATA[new Boolean($F{Picture} != null && !$F{Picture}.equals(""))]]></printWhenExpression>
 				</reportElement>
 				<imageExpression class="java.lang.String"><![CDATA[new java.net.URL($F{Picture})]]></imageExpression>
