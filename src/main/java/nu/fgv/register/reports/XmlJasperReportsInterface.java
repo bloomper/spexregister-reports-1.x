@@ -9,6 +9,10 @@ import net.sf.jasperreports.engine.export.JRCsvExporter;
 import net.sf.jasperreports.engine.export.JRRtfExporter;
 import net.sf.jasperreports.engine.export.JRXlsExporter;
 import net.sf.jasperreports.engine.export.JRXlsExporterParameter;
+import net.sf.jasperreports.engine.export.oasis.JROdsExporter;
+import net.sf.jasperreports.engine.export.oasis.JROdtExporter;
+import net.sf.jasperreports.engine.export.ooxml.JRDocxExporter;
+import net.sf.jasperreports.engine.export.ooxml.JRDocxExporterParameter;
 
 /**
  * An XML JasperReports interface.
@@ -106,8 +110,17 @@ public class XmlJasperReportsInterface {
                 csvExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, System.out);
                 csvExporter.exportReport();
             } else if (TYPE_DOCX.equals(outputType)) {
+                JRDocxExporter docxExporter = new JRDocxExporter();
+                docxExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+                docxExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, System.out);
             } else if (TYPE_ODT.equals(outputType)) {
+                JROdtExporter odtExporter = new JROdtExporter();
+                odtExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+                odtExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, System.out);
             } else if (TYPE_ODS.equals(outputType)) {
+                JROdsExporter odsExporter = new JROdsExporter();
+                odsExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+                odsExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, System.out);
             } else {
                 printUsage();
             }
