@@ -9,4 +9,26 @@
 
 	<context:annotation-config />
 
+    <context:property-placeholder location="classpath:reports.properties"/>
+
+    <bean id="generatorService" class="nu.fgv.register.reports.service.GeneratorService">
+        <property name="reportSuffix" value="${report.suffix}"/>
+    	<property name="reportPrefix" value="${report.prefix}"/>
+    </bean>
+
+    <bean id="mimeTypeMapper" class="nu.fgv.register.reports.util.MimeTypeMapper">
+    	<property name="types">
+    		<map>
+    			<entry key="pdf" value="application/pdf"/>
+                <entry key="xml" value="application/xml"/>
+                <entry key="rtf" value="application/rtf"/>
+                <entry key="xls" value="application/vnd.ms-excel"/>
+                <entry key="csv" value="text/csv"/>
+                <entry key="docx" value="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <entry key="odt" value="application/vnd.oasis.opendocument.text"/>
+                <entry key="ods" value="application/vnd.oasis.opendocument.spreadsheet"/>
+    	    </map>
+        </property>
+    </bean>
+
 </beans>

@@ -130,6 +130,7 @@
         </dependency>
     </dependencies>
     <build>
+        <finalName>spexregister.reports</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -181,7 +182,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <outputDirectory>${project.build.sourceDirectory}/../webapp/WEB-INF/reports</outputDirectory>
+                    <outputDirectory>${project.build.sourceDirectory}/../webapp/WEB-INF/classes</outputDirectory>
                     <compiler>net.sf.jasperreports.compilers.JRGroovyCompiler</compiler>
                 </configuration>
                 <dependencies>
@@ -208,7 +209,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.sourceDirectory}/../webapp/WEB-INF/reports</outputDirectory>
+                            <outputDirectory>${project.build.sourceDirectory}/../webapp/WEB-INF/classes</outputDirectory>
                             <resources>          
                                 <resource>
                                     <directory>${project.build.sourceDirectory}/../jasperreports</directory>
@@ -220,6 +221,13 @@
                         </configuration>            
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.googlecode.t7mp</groupId>
+                <artifactId>maven-t7-plugin</artifactId>
+				<configuration>
+					<tomcatVersion>7.0.6</tomcatVersion>
+			    </configuration>
             </plugin>
         </plugins>
     </build>
