@@ -28,13 +28,21 @@ public class GeneratorController {
     private MimeTypeMapper mimeTypeMapper;
 
     @RequestMapping(value = "/generate", method = RequestMethod.POST)
-    public void generate(@RequestParam("report") String report, @RequestParam("format") String format, @RequestParam(value = "selectCriteria", required = false, defaultValue = ".") String selectCriteria, @RequestBody String body, HttpServletResponse response) throws IOException {
-        log.debug("Incoming request (report = {}, format = {}, selectCriteria = {}", new Object[] { report, format, selectCriteria });
-        byte[] generatedReport = generatorService.generate(report, format, body, selectCriteria);
-        response.setContentType(mimeTypeMapper.getType(format));
-        response.setContentLength(generatedReport.length);
-        log.debug("Outgoing response (contentType = {}, contentLength = {}", new Object[] { response.getContentType(), generatedReport.length });
-        response.getOutputStream().write(generatedReport);
+    public void generate(@RequestParam("report") String report, @RequestParam("format") String format, @RequestParam(value = "selectCriteria", required = false, defaultValue = ".") String selectCriteria, @RequestBody String body, HttpServletResponse response) {
+        try {
+            log.debug("Incoming request (report = {}, format = {}, selectCriteria = {}", new Object[] { report, format, selectCriteria });
+            byte[] generatedReport = generatorService.generate(report, format, body, selectCriteria);
+            response.setContentType(mimeTypeMapper.getType(format));
+            response.setContentLength(generatedReport.length);
+            log.debug("Outgoing response (contentType = {}, contentLength = {}", new Object[] { response.getContentType(), generatedReport.length });
+            response.getOutputStream().write(generatedReport);
+        } catch(Exception e) {
+            try {
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            } catch (IOException e1) {
+                throw new RuntimeException(e1);
+            }
+        }
     }
 
 }
