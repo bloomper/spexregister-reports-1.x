@@ -3,6 +3,7 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<import value="nu.fgv.register.reports.util.XmlDataSource"/>
 	<subDataset name="actors_dataset" resourceBundle="detailed_summary" whenResourceMissingType="Key">
 		<queryString language="xPath">
 			<![CDATA[.]]>
@@ -38,7 +39,7 @@
 				</reportElement>
 				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
 					<datasetRun subDataset="actors_dataset">
-						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Function/Actors/Actor")]]></dataSourceExpression>
+						<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Function/Actors/Actor")]]></dataSourceExpression>
 					</datasetRun>
 					<jr:listContents height="15" width="235">
 						<textField isBlankWhenNull="true">

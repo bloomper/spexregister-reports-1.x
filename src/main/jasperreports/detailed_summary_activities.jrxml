@@ -3,6 +3,7 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<import value="nu.fgv.register.reports.util.XmlDataSource"/>
 	<subDataset name="spex_dataset" resourceBundle="detailed_summary" whenResourceMissingType="Key">
 		<queryString language="xPath">
 			<![CDATA[.]]>
@@ -21,7 +22,7 @@
 		</field>
 	</subDataset>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["C:\\dev\\spexregister\\spexregister.reports\\src\\main\\resources\\"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<queryString language="xPath">
 		<![CDATA[]]>
@@ -32,7 +33,7 @@
 				<reportElement x="0" y="0" width="320" height="15"/>
 				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
 					<datasetRun subDataset="spex_dataset">
-						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activity/Spex")]]></dataSourceExpression>
+						<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activity/Spex")]]></dataSourceExpression>
 					</datasetRun>
 					<jr:listContents height="15" width="320">
 						<textField isBlankWhenNull="true">
@@ -68,7 +69,7 @@
 			</componentElement>
 			<subreport>
 				<reportElement x="320" y="0" width="235" height="15"/>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activity/Functions/Function")]]></dataSourceExpression>
+				<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activity/Functions/Function")]]></dataSourceExpression>
 				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "detailed_summary_activities_functions.jasper"]]></subreportExpression>
 			</subreport>
 		</band>

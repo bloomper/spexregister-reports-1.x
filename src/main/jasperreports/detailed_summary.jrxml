@@ -3,6 +3,7 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<import value="nu.fgv.register.reports.util.XmlDataSource"/>
 	<subDataset name="memberships_dataset" resourceBundle="detailed_summary" whenResourceMissingType="Key">
 		<queryString language="xPath">
 			<![CDATA[]]>
@@ -12,7 +13,7 @@
 		</field>
 	</subDataset>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["C:\\dev\\spexregister\\spexregister.reports\\src\\main\\resources\\"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<queryString language="xPath">
 		<![CDATA[/Spexare]]>
@@ -441,7 +442,7 @@
 				</reportElement>
 				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Horizontal">
 					<datasetRun subDataset="memberships_dataset">
-						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Memberships/Membership[@kind='FGV']/Year")]]></dataSourceExpression>
+						<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Memberships/Membership[@kind='FGV']/Year")]]></dataSourceExpression>
 					</datasetRun>
 					<jr:listContents height="15" width="55">
 						<textField isBlankWhenNull="true">
@@ -471,7 +472,7 @@
 				</reportElement>
 				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Horizontal">
 					<datasetRun subDataset="memberships_dataset">
-						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Memberships/Membership[@kind='CING']/Year")]]></dataSourceExpression>
+						<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Memberships/Membership[@kind='CING']/Year")]]></dataSourceExpression>
 					</datasetRun>
 					<jr:listContents height="15" width="55">
 						<textField isBlankWhenNull="true">
@@ -530,7 +531,7 @@
 			</textField>
 			<subreport>
 				<reportElement x="0" y="35" width="555" height="15"/>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Activities/Activity")]]></dataSourceExpression>
+				<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Activities/Activity")]]></dataSourceExpression>
 				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "detailed_summary_activities.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
