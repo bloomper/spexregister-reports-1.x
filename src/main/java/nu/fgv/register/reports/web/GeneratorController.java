@@ -28,17 +28,17 @@ public class GeneratorController {
     private MimeTypeMapper mimeTypeMapper;
 
     @RequestMapping(value = "/generate", method = RequestMethod.POST)
-    public void generate(@RequestParam("report") String report, @RequestParam("format") String format, @RequestParam(value = "selectCriteria", required = false) String selectCriteria, @RequestBody String body, HttpServletResponse response) {
+    public void generate(@RequestParam("report") String report, @RequestParam("format") String format, @RequestParam(value = "selectCriteria", required = false) String selectCriteria, @RequestParam(value = "locale", required = false) String locale, @RequestBody String body, HttpServletResponse response) {
         try {
-            log.debug("Incoming request (report = {}, format = {}, selectCriteria = {}", new Object[] { report, format, selectCriteria });
-            byte[] generatedReport = generatorService.generate(report, format, body, selectCriteria);
-            if(generatedReport == null && generatedReport.length == 0) {
+            log.debug("Request (report = {}, format = {}, locale = {}, selectCriteria = {}", new Object[] { report, format, locale, selectCriteria });
+            byte[] generatedReport = generatorService.generate(report, format, locale, body, selectCriteria);
+            if(generatedReport == null || generatedReport.length == 0) {
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
                 return;
             }
             response.setContentType(mimeTypeMapper.getType(format));
             response.setContentLength(generatedReport.length);
-            log.debug("Outgoing response (contentType = {}, contentLength = {}", new Object[] { response.getContentType(), generatedReport.length });
+            log.debug("Response (contentType = {}, contentLength = {}", new Object[] { response.getContentType(), generatedReport.length });
             response.getOutputStream().write(generatedReport);
         } catch(Exception e) {
             log.error("Unexpected error", e);

@@ -4,6 +4,10 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+import java.util.ResourceBundle;
 
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.core.io.ClassPathResource;
@@ -12,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRExporterParameter;
+import net.sf.jasperreports.engine.JRParameter;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -40,7 +45,7 @@ public class GeneratorService {
 
     private String reportSuffix;
     private String reportPrefix;
-    
+
     @Required
     public void setReportSuffix(String reportSuffix) {
         this.reportSuffix = reportSuffix;
@@ -60,9 +65,17 @@ public class GeneratorService {
      *
      * @return The report
      */
-    public byte[] generate(String report, String outputFormat, String inputData, String selectCriteria) {
+    public byte[] generate(String report, String outputFormat, String locale, String inputData, String selectCriteria) {
         try {
-            JasperPrint jasperPrint = JasperFillManager.fillReport(getReport(report), null, new XmlDataSource(new ByteArrayInputStream(inputData.getBytes("UTF-8")), selectCriteria));
+            ResourceBundle resourceBundle = null;
+            if (locale == null) {
+                resourceBundle = ResourceBundle.getBundle(report);
+            } else {
+                resourceBundle = ResourceBundle.getBundle(report, new Locale(locale));
+            }
+            Map<String, Object> parameters = new HashMap<String, Object>();
+            parameters.put(JRParameter.REPORT_RESOURCE_BUNDLE, resourceBundle);
+            JasperPrint jasperPrint = JasperFillManager.fillReport(getReport(report), parameters, new XmlDataSource(new ByteArrayInputStream(inputData.getBytes("UTF-8")), selectCriteria));
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
             if (TYPE_PDF.equals(outputFormat)) {
