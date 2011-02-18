@@ -3,6 +3,7 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<import value="nu.fgv.register.reports.util.XmlDataSource"/>
 	<subDataset name="details_dataset" resourceBundle="pluton_list" whenResourceMissingType="Key">
 		<queryString language="xPath">
 			<![CDATA[]]>
@@ -94,7 +95,7 @@
 				<reportElement x="0" y="0" width="575" height="30"/>
 				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
 					<datasetRun subDataset="details_dataset">
-						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/PlutonList/SpexareItems/Spexare")]]></dataSourceExpression>
+						<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/PlutonList/SpexareItems/Spexare")]]></dataSourceExpression>
 					</datasetRun>
 					<jr:listContents height="30" width="575">
 						<rectangle>
