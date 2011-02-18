@@ -91,14 +91,17 @@ public class GeneratorService {
                 JRDocxExporter docxExporter = new JRDocxExporter();
                 docxExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
                 docxExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, outputStream);
+                docxExporter.exportReport();
             } else if (TYPE_ODT.equals(outputFormat)) {
                 JROdtExporter odtExporter = new JROdtExporter();
                 odtExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
                 odtExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, outputStream);
+                odtExporter.exportReport();
             } else if (TYPE_ODS.equals(outputFormat)) {
                 JROdsExporter odsExporter = new JROdsExporter();
                 odsExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
                 odsExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, outputStream);
+                odsExporter.exportReport();
             } else {
                 throw new RuntimeException("Unknown format");
             }
