@@ -28,7 +28,7 @@ public class GeneratorController {
     private MimeTypeMapper mimeTypeMapper;
 
     @RequestMapping(value = "/generate", method = RequestMethod.POST)
-    public void generate(@RequestParam("report") String report, @RequestParam("format") String format, @RequestParam(value = "selectCriteria", required = false, defaultValue = ".") String selectCriteria, @RequestBody String body, HttpServletResponse response) {
+    public void generate(@RequestParam("report") String report, @RequestParam("format") String format, @RequestParam(value = "selectCriteria", required = false) String selectCriteria, @RequestBody String body, HttpServletResponse response) {
         try {
             log.debug("Incoming request (report = {}, format = {}, selectCriteria = {}", new Object[] { report, format, selectCriteria });
             byte[] generatedReport = generatorService.generate(report, format, body, selectCriteria);
@@ -41,9 +41,11 @@ public class GeneratorController {
             log.debug("Outgoing response (contentType = {}, contentLength = {}", new Object[] { response.getContentType(), generatedReport.length });
             response.getOutputStream().write(generatedReport);
         } catch(Exception e) {
+            log.error("Unexpected error", e);
             try {
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             } catch (IOException e1) {
+                log.error("Unexpected error when sending error response", e1);
                 throw new RuntimeException(e1);
             }
         }
