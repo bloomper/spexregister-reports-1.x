@@ -24,6 +24,7 @@ import net.sf.jasperreports.engine.export.JRCsvExporter;
 import net.sf.jasperreports.engine.export.JRHtmlExporter;
 import net.sf.jasperreports.engine.export.JRPdfExporter;
 import net.sf.jasperreports.engine.export.JRRtfExporter;
+import net.sf.jasperreports.engine.export.JRXhtmlExporter;
 import net.sf.jasperreports.engine.export.JRXlsExporter;
 import net.sf.jasperreports.engine.export.JRXlsExporterParameter;
 import net.sf.jasperreports.engine.export.JRXmlExporter;
@@ -93,7 +94,7 @@ public class GeneratorService {
                 xmlExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, outputStream);
                 xmlExporter.exportReport();
             } else if (TYPE_HTML.equals(outputFormat)) {
-                JRHtmlExporter htmlExporter = new JRHtmlExporter();
+                JRXhtmlExporter htmlExporter = new JRXhtmlExporter();
                 htmlExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
                 htmlExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, outputStream);
                 htmlExporter.exportReport();
