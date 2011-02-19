@@ -31,6 +31,7 @@ public class GeneratorController {
     public void generate(@RequestParam("report") String report, @RequestParam("format") String format, @RequestParam(value = "selectCriteria", required = false) String selectCriteria, @RequestParam(value = "locale", required = false) String locale, @RequestBody String body, HttpServletResponse response) {
         try {
             log.debug("Request (report = {}, format = {}, locale = {}, selectCriteria = {}", new Object[] { report, format, locale, selectCriteria });
+            log.trace("Request body = {}", body);
             byte[] generatedReport = generatorService.generate(report, format, locale, body, selectCriteria);
             if(generatedReport == null || generatedReport.length == 0) {
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
