@@ -21,9 +21,12 @@ import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.export.JRCsvExporter;
+import net.sf.jasperreports.engine.export.JRHtmlExporter;
+import net.sf.jasperreports.engine.export.JRPdfExporter;
 import net.sf.jasperreports.engine.export.JRRtfExporter;
 import net.sf.jasperreports.engine.export.JRXlsExporter;
 import net.sf.jasperreports.engine.export.JRXlsExporterParameter;
+import net.sf.jasperreports.engine.export.JRXmlExporter;
 import net.sf.jasperreports.engine.export.oasis.JROdsExporter;
 import net.sf.jasperreports.engine.export.oasis.JROdtExporter;
 import net.sf.jasperreports.engine.export.ooxml.JRDocxExporter;
@@ -36,6 +39,7 @@ import nu.fgv.register.reports.util.XmlDataSource;
 public class GeneratorService {
     private static final String TYPE_PDF = "pdf";
     private static final String TYPE_XML = "xml";
+    private static final String TYPE_HTML = "html";
     private static final String TYPE_RTF = "rtf";
     private static final String TYPE_XLS = "xls";
     private static final String TYPE_CSV = "csv";
@@ -79,9 +83,20 @@ public class GeneratorService {
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
             if (TYPE_PDF.equals(outputFormat)) {
-                JasperExportManager.exportReportToPdfStream(jasperPrint, outputStream);
+                JRPdfExporter pdfExporter = new JRPdfExporter();
+                pdfExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+                pdfExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, outputStream);
+                pdfExporter.exportReport();
             } else if (TYPE_XML.equals(outputFormat)) {
-                JasperExportManager.exportReportToXmlStream(jasperPrint, outputStream);
+                JRXmlExporter xmlExporter = new JRXmlExporter();
+                xmlExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+                xmlExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, outputStream);
+                xmlExporter.exportReport();
+            } else if (TYPE_HTML.equals(outputFormat)) {
+                JRHtmlExporter htmlExporter = new JRHtmlExporter();
+                htmlExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+                htmlExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, outputStream);
+                htmlExporter.exportReport();
             } else if (TYPE_RTF.equals(outputFormat)) {
                 JRRtfExporter rtfExporter = new JRRtfExporter();
                 rtfExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);

@@ -21,6 +21,7 @@
     		<map>
     			<entry key="pdf" value="application/pdf"/>
                 <entry key="xml" value="application/xml"/>
+                <entry key="html" value="text/html"/>
                 <entry key="rtf" value="application/rtf"/>
                 <entry key="xls" value="application/vnd.ms-excel"/>
                 <entry key="csv" value="text/csv"/>
