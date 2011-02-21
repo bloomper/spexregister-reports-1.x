@@ -108,7 +108,7 @@
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="300" splitType="Prevent">
+		<band height="315" splitType="Prevent">
 			<textField isBlankWhenNull="true">
 				<reportElement x="0" y="0" width="95" height="15"/>
 				<textElement verticalAlignment="Middle">
@@ -191,10 +191,17 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.emailAddress}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="180" width="95" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.spouse}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="180" width="95" height="15" isRemoveLineWhenBlank="true">
+				<reportElement x="0" y="195" width="95" height="15" isRemoveLineWhenBlank="true">
 					<printWhenExpression><![CDATA[$F{Comment} != null && !$F{Comment}.equals("")]]></printWhenExpression>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
@@ -347,10 +354,17 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{EmailAddress}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="95" y="180" width="263" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="false"/>
+				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Spouse}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="195" width="358" height="105" isRemoveLineWhenBlank="true"/>
+				<reportElement x="0" y="210" width="358" height="105" isRemoveLineWhenBlank="true"/>
 				<textElement>
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
@@ -423,7 +437,7 @@
 				<reportElement x="385" y="150" width="140" height="150" isRemoveLineWhenBlank="true">
 					<printWhenExpression><![CDATA[new Boolean($F{Picture} != null && !$F{Picture}.equals(""))]]></printWhenExpression>
 				</reportElement>
-				<imageExpression class="java.lang.String"><![CDATA[new java.net.URL($F{Picture})]]></imageExpression>
+				<imageExpression class="java.net.URL"><![CDATA[new java.net.URL($F{Picture})]]></imageExpression>
 			</image>
 		</band>
 		<band height="35" splitType="Prevent">
@@ -532,7 +546,7 @@
 			<subreport>
 				<reportElement x="0" y="35" width="555" height="15"/>
 				<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Activities/Activity")]]></dataSourceExpression>
-				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "detailed_summary_activities.jasper"]]></subreportExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "/detailed_summary_activities.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</detail>
