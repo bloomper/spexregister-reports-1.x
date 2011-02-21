@@ -21,9 +21,6 @@
 			<fieldDescription><![CDATA[Category]]></fieldDescription>
 		</field>
 	</subDataset>
-	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
-	</parameter>
 	<queryString language="xPath">
 		<![CDATA[]]>
 	</queryString>
@@ -70,7 +67,7 @@
 			<subreport>
 				<reportElement x="320" y="0" width="235" height="15"/>
 				<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Activity/Functions/Function")]]></dataSourceExpression>
-				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "/detailed_summary_activities_functions.jasper"]]></subreportExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["detailed_summary_activities_functions.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</detail>

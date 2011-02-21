@@ -12,9 +12,6 @@
 			<fieldDescription><![CDATA[.]]></fieldDescription>
 		</field>
 	</subDataset>
-	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
-	</parameter>
 	<queryString language="xPath">
 		<![CDATA[/Spexare]]>
 	</queryString>
@@ -546,7 +543,7 @@
 			<subreport>
 				<reportElement x="0" y="35" width="555" height="15"/>
 				<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/Spexare/Activities/Activity")]]></dataSourceExpression>
-				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "/detailed_summary_activities.jasper"]]></subreportExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["detailed_summary_activities.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</detail>
