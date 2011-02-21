@@ -10,7 +10,7 @@
     </appender>
     
     <logger name="nu.fgv.register.reports">
-        <level value="debug" />
+        <level value="info" />
     </logger>
     
     <logger name="org.springframework">
