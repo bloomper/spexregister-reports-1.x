@@ -6,20 +6,8 @@ Installation
 
   Follow these steps:
 
-   * Install Tomcat
+   * mvn clean install t7:run (for development)
 
-   * Install MySQL
-
-   * Create JS user
-
-   * Install JasperServer (it might be necessary to import sample data to get the base structure)
-
-   * Install iReport
-
-   * Connect iReport to JasperServer (jasperadmin/jasperadmin)
-   
-   * Create subdirectory 'Register' under Reports
-   
-   * Deploy reports from iReport (subreports must be deployed as JRXML documents and NOT report units)
+   * install the WAR file in Tomcat (for production)
 
    []
