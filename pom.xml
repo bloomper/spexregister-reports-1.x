@@ -21,7 +21,7 @@
         <url>http://fgv.nu</url>
     </organization>
     <scm>
-        <connection>scm:svn:svn://192.168.4.110/spexregister/spexregister.reports/</connection>
+        <connection>scm:svn:svn://192.168.4.110/spexregister/spexregister.reports/trunk</connection>
     </scm>
     <developers>
         <developer>
