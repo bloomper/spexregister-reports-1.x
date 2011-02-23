@@ -226,9 +226,9 @@
             <plugin>
                 <groupId>com.googlecode.t7mp</groupId>
                 <artifactId>maven-t7-plugin</artifactId>
-				<configuration>
-					<tomcatVersion>7.0.6</tomcatVersion>
-			    </configuration>
+                <configuration>
+                    <tomcatVersion>7.0.6</tomcatVersion>
+                </configuration>
             </plugin>
         </plugins>
     </build>
