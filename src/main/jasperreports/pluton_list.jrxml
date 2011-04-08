@@ -114,21 +114,21 @@
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{FirstName}.concat(" ").concat($F{LastName})]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="175" y="0" width="75" height="15"/>
+							<reportElement x="175" y="0" width="65" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{BirthDate}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="250" y="0" width="115" height="15"/>
+							<reportElement x="240" y="0" width="120" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="365" y="0" width="130" height="15"/>
+							<reportElement x="360" y="0" width="135" height="30"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
@@ -149,7 +149,7 @@
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{NickName}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="250" y="15" width="115" height="15"/>
+							<reportElement x="240" y="15" width="120" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
