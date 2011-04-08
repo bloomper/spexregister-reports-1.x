@@ -224,7 +224,7 @@
 		<band height="20" splitType="Stretch">
 			<rectangle>
 				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="2268" height="20" backcolor="#CCCCCC">
-					<printWhenExpression><![CDATA[new Boolean(($V{REPORT_COUNT} % 2) == 0)]]></printWhenExpression>
+					<printWhenExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></printWhenExpression>
 				</reportElement>
 				<graphicElement>
 					<pen lineWidth="0.0"/>

@@ -22,20 +22,20 @@
 				<reportElement mode="Opaque" x="0" y="0" width="180" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
 			<textField isBlankWhenNull="false">
-				<reportElement mode="Opaque" x="5" y="1" width="175" height="29" backcolor="#CCCCCC"/>
+				<reportElement mode="Opaque" x="5" y="1" width="190" height="29" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.name}]]></textFieldExpression>
 			</textField>
 			<rectangle>
-				<reportElement x="180" y="0" width="125" height="30" backcolor="#CCCCCC"/>
+				<reportElement x="195" y="0" width="120" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
 			<rectangle>
-				<reportElement x="305" y="0" width="125" height="30" backcolor="#CCCCCC"/>
+				<reportElement x="315" y="0" width="120" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
 			<rectangle>
-				<reportElement x="430" y="0" width="125" height="30" backcolor="#CCCCCC"/>
+				<reportElement x="435" y="0" width="120" height="30" backcolor="#CCCCCC"/>
 			</rectangle>
 		</band>
 	</columnHeader>
@@ -43,26 +43,26 @@
 		<band height="20" splitType="Stretch">
 			<rectangle>
 				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="20" backcolor="#CCCCCC">
-					<printWhenExpression><![CDATA[new Boolean(($V{REPORT_COUNT} % 2) == 0)]]></printWhenExpression>
+					<printWhenExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></printWhenExpression>
 				</reportElement>
 				<graphicElement>
 					<pen lineWidth="0.0"/>
 				</graphicElement>
 			</rectangle>
 			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="180" height="20" backcolor="#FFFFFF"/>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="195" height="20" backcolor="#FFFFFF"/>
 			</rectangle>
 			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="180" y="0" width="125" height="20" backcolor="#FFFFFF"/>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="195" y="0" width="120" height="20" backcolor="#FFFFFF"/>
 			</rectangle>
 			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="305" y="0" width="125" height="20" backcolor="#FFFFFF"/>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="315" y="0" width="120" height="20" backcolor="#FFFFFF"/>
 			</rectangle>
 			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="430" y="0" width="125" height="20" backcolor="#FFFFFF"/>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="435" y="0" width="120" height="20" backcolor="#FFFFFF"/>
 			</rectangle>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToTallestObject" x="5" y="0" width="175" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="5" y="0" width="190" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
