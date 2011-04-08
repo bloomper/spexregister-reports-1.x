@@ -207,161 +207,161 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.comment}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="369" y="0" width="116" height="15"/>
+				<reportElement x="359" y="0" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.birthDate}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="369" y="15" width="116" height="15"/>
+				<reportElement x="359" y="15" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.socialSecurityNumber}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="369" y="30" width="116" height="15"/>
+				<reportElement x="359" y="30" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.chalmersStudent}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="369" y="45" width="116" height="15"/>
+				<reportElement x="359" y="45" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.graduation}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="369" y="60" width="116" height="15"/>
+				<reportElement x="359" y="60" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.deceased}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="369" y="75" width="116" height="15"/>
+				<reportElement x="359" y="75" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.publishApproval}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="369" y="90" width="116" height="15"/>
+				<reportElement x="359" y="90" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.wantCirculars}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="369" y="105" width="116" height="15"/>
+				<reportElement x="359" y="105" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.wantEmailCirculars}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="369" y="120" width="116" height="15"/>
+				<reportElement x="359" y="120" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.uncertainAddress}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="0" width="263" height="15"/>
+				<reportElement x="95" y="0" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{FirstName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="15" width="263" height="15"/>
+				<reportElement x="95" y="15" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{LastName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="30" width="263" height="15"/>
+				<reportElement x="95" y="30" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{NickName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="45" width="263" height="15"/>
+				<reportElement x="95" y="45" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="60" width="263" height="15"/>
+				<reportElement x="95" y="60" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalCode}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="75" width="263" height="15"/>
+				<reportElement x="95" y="75" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalAddress}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="90" width="263" height="15"/>
+				<reportElement x="95" y="90" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Country}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="105" width="263" height="15"/>
+				<reportElement x="95" y="105" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneHome}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="120" width="263" height="15"/>
+				<reportElement x="95" y="120" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneWork}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="135" width="263" height="15"/>
+				<reportElement x="95" y="135" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneMobile}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="150" width="263" height="15"/>
+				<reportElement x="95" y="150" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneOther}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="165" width="263" height="15"/>
+				<reportElement x="95" y="165" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{EmailAddress}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="180" width="263" height="15"/>
+				<reportElement x="95" y="180" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Spouse}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="210" width="358" height="105" isRemoveLineWhenBlank="true"/>
+				<reportElement x="0" y="210" width="348" height="105" isRemoveLineWhenBlank="true"/>
 				<textElement>
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
