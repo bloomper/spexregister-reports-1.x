@@ -24,7 +24,7 @@
 	<detail>
 		<band height="103" splitType="Stretch">
 			<textField isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="15" y="0" width="183" height="30"/>
+				<reportElement positionType="FixRelativeToBottom" stretchType="RelativeToTallestObject" x="15" y="0" width="183" height="30"/>
 				<textElement verticalAlignment="Bottom">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
