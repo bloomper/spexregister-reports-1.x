@@ -46,6 +46,7 @@ public class GeneratorService {
 
     private String reportSuffix;
     private String reportPrefix;
+    private String reportDefaultLocale;
 
     @Required
     public void setReportSuffix(String reportSuffix) {
@@ -55,6 +56,11 @@ public class GeneratorService {
     @Required
     public void setReportPrefix(String reportPrefix) {
         this.reportPrefix = reportPrefix;
+    }
+
+    @Required
+    public void setReportDefaultLocale(String reportDefaultLocale) {
+        this.reportDefaultLocale = reportDefaultLocale;
     }
 
     private InputStream getReport(String report) throws IOException {
@@ -71,8 +77,15 @@ public class GeneratorService {
             ResourceBundle resourceBundle = null;
             if (locale == null) {
                 resourceBundle = ResourceBundle.getBundle(report);
+            } else if (locale.equalsIgnoreCase(reportDefaultLocale)) {
+                resourceBundle = ResourceBundle.getBundle(report, new Locale(""));
             } else {
-                resourceBundle = ResourceBundle.getBundle(report, new Locale(locale));
+                if(locale.indexOf("-") != -1) {
+                    String[] languageAndCountry = locale.split("\\-");
+                    resourceBundle = ResourceBundle.getBundle(report, new Locale(languageAndCountry[0], languageAndCountry[1]));
+                } else {
+                    resourceBundle = ResourceBundle.getBundle(report, new Locale(locale));
+                }
             }
             Map<String, Object> parameters = new HashMap<String, Object>();
             parameters.put(JRParameter.REPORT_RESOURCE_BUNDLE, resourceBundle);

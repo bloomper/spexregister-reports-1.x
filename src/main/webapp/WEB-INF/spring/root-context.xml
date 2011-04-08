@@ -14,6 +14,7 @@
     <bean id="generatorService" class="nu.fgv.register.reports.service.GeneratorService">
         <property name="reportSuffix" value="${report.suffix}"/>
     	<property name="reportPrefix" value="${report.prefix}"/>
+        <property name="reportDefaultLocale" value="${report.default.locale}"/>
     </bean>
 
     <bean id="mimeTypeMapper" class="nu.fgv.register.reports.util.MimeTypeMapper">
