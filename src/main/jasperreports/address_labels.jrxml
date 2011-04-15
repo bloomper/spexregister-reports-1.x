@@ -42,7 +42,7 @@
 				<textElement verticalAlignment="Bottom">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalCode}.concat(" ").concat($F{PostalAddress})]]></textFieldExpression>
+				<textFieldExpression class="java.lang.String"><![CDATA[($F{PostalCode} != null && !$F{PostalCode}.isEmpty() ? $F{PostalCode}.concat(" ").concat($F{PostalAddress}) : $F{PostalAddress} )]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToTallestObject" x="15" y="72" width="183" height="31"/>
