@@ -42,7 +42,7 @@
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
-            <version>4.0.2</version>
+            <version>4.0.1</version>
             <exclusions>
                 <exclusion>
                     <groupId>bouncycastle</groupId>
@@ -190,7 +190,7 @@
                     <dependency>
                         <groupId>net.sf.jasperreports</groupId>
                         <artifactId>jasperreports</artifactId>
-                        <version>4.0.2</version>
+                        <version>4.0.1</version>
                     </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
