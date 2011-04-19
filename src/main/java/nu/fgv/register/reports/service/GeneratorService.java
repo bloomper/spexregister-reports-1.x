@@ -116,7 +116,7 @@ public class GeneratorService {
                 JRXlsExporter xlsExporter = new JRXlsExporter();
                 xlsExporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
                 xlsExporter.setParameter(JRExporterParameter.OUTPUT_STREAM, outputStream);
-                xlsExporter.setParameter(JRXlsExporterParameter.IS_ONE_PAGE_PER_SHEET, Boolean.TRUE);
+                xlsExporter.setParameter(JRXlsExporterParameter.IS_ONE_PAGE_PER_SHEET, Boolean.FALSE);
                 xlsExporter.setParameter(JRXlsExporterParameter.IS_WHITE_PAGE_BACKGROUND, Boolean.FALSE);
                 xlsExporter.setParameter(JRXlsExporterParameter.IS_REMOVE_EMPTY_SPACE_BETWEEN_ROWS, Boolean.TRUE);
                 xlsExporter.exportReport();
