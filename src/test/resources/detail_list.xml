@@ -22,6 +22,8 @@
     <WantCirculars>Ja</WantCirculars>
     <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
+    <InfoSpexMember>Ja</InfoSpexMember>
+    <PratSpexMember>Nej</PratSpexMember>
   </Spexare>
   <Spexare>
     <FirstName>Anders</FirstName>
@@ -45,6 +47,8 @@
     <WantCirculars>Ja</WantCirculars>
     <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
+    <InfoSpexMember>Ja</InfoSpexMember>
+    <PratSpexMember>Nej</PratSpexMember>
   </Spexare>
   <Spexare>
     <FirstName>Anders</FirstName>
@@ -68,6 +72,8 @@
     <WantCirculars>Ja</WantCirculars>
     <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
+    <InfoSpexMember>Ja</InfoSpexMember>
+    <PratSpexMember>Nej</PratSpexMember>
   </Spexare>
   <Spexare>
     <FirstName>Anders</FirstName>
@@ -91,6 +97,8 @@
     <WantCirculars>Ja</WantCirculars>
     <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
+    <InfoSpexMember>Ja</InfoSpexMember>
+    <PratSpexMember>Nej</PratSpexMember>
   </Spexare>
   <Spexare>
     <FirstName>Anders</FirstName>
@@ -114,5 +122,7 @@
     <WantCirculars>Ja</WantCirculars>
     <WantEmailCirculars>Ja</WantEmailCirculars>
     <UncertainAddress>Nej</UncertainAddress>
+    <InfoSpexMember>Ja</InfoSpexMember>
+    <PratSpexMember>Nej</PratSpexMember>
   </Spexare>
 </SpexareItems>
