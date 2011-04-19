@@ -121,14 +121,14 @@
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{BirthDate}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="220" y="0" width="140" height="15"/>
+							<reportElement x="220" y="0" width="145" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="360" y="0" width="150" height="30"/>
+							<reportElement x="365" y="0" width="145" height="30"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
@@ -149,7 +149,7 @@
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{NickName}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="220" y="15" width="140" height="15"/>
+							<reportElement x="220" y="15" width="145" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
