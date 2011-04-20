@@ -6,20 +6,30 @@
 	<queryString language="xPath">
 		<![CDATA[/SpexareItems/Spexare]]>
 	</queryString>
+	<field name="FullName" class="java.lang.String">
+		<fieldDescription><![CDATA[FullName]]></fieldDescription>
+	</field>
 	<field name="EmailAddress" class="java.lang.String">
 		<fieldDescription><![CDATA[EmailAddress]]></fieldDescription>
 	</field>
-	<columnHeader>
+	<title>
 		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement mode="Opaque" x="0" y="0" width="555" height="20" backcolor="#CCCCCC"/>
+				<reportElement mode="Opaque" x="0" y="0" width="200" height="20" backcolor="#CCCCCC"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.fullName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="200" y="0" width="355" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.emailAddress}]]></textFieldExpression>
 			</textField>
 		</band>
-	</columnHeader>
+	</title>
 	<detail>
 		<band height="20" splitType="Stretch">
 			<rectangle>
@@ -31,7 +41,14 @@
 				</graphicElement>
 			</rectangle>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="200" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{FullName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="200" y="0" width="355" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
