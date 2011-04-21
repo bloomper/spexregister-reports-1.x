@@ -75,9 +75,6 @@
 	<field name="WantEmailCirculars" class="java.lang.String">
 		<fieldDescription><![CDATA[WantEmailCirculars]]></fieldDescription>
 	</field>
-	<field name="UncertainAddress" class="java.lang.String">
-		<fieldDescription><![CDATA[UncertainAddress]]></fieldDescription>
-	</field>
 	<field name="InfoSpexMember" class="java.lang.String">
 		<fieldDescription><![CDATA[InfoSpexMember]]></fieldDescription>
 	</field>
@@ -111,7 +108,7 @@
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="345" splitType="Prevent">
+		<band height="330" splitType="Prevent">
 			<textField isBlankWhenNull="true">
 				<reportElement x="0" y="0" width="95" height="15"/>
 				<textElement verticalAlignment="Middle">
@@ -269,13 +266,6 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.wantEmailCirculars}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="359" y="120" width="126" height="15"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.uncertainAddress}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
 				<reportElement x="95" y="0" width="253" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
@@ -429,42 +419,35 @@
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{WantEmailCirculars}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="120" width="70" height="15"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" isBold="false"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{UncertainAddress}]]></textFieldExpression>
-			</textField>
 			<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
-				<reportElement x="385" y="180" width="140" height="150" isRemoveLineWhenBlank="true">
+				<reportElement x="385" y="165" width="140" height="150" isRemoveLineWhenBlank="true">
 					<printWhenExpression><![CDATA[new Boolean($F{Picture} != null && !$F{Picture}.equals(""))]]></printWhenExpression>
 				</reportElement>
 				<imageExpression class="java.net.URL"><![CDATA[new java.net.URL($F{Picture})]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
-				<reportElement x="359" y="135" width="126" height="15"/>
+				<reportElement x="359" y="120" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.infoSpexMember}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="359" y="150" width="126" height="15"/>
+				<reportElement x="359" y="135" width="126" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.pratSpexMember}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="135" width="70" height="15"/>
+				<reportElement x="485" y="120" width="70" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{InfoSpexMember}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="485" y="150" width="70" height="15"/>
+				<reportElement x="485" y="135" width="70" height="15"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="false"/>
 				</textElement>
