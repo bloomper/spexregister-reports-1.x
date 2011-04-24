@@ -3,13 +3,13 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<import value="nu.fgv.register.reports.util.XmlDataSource"/>
 	<style name="evenOdd" backcolor="#CCCCCC" pattern="" isBlankWhenNull="true">
 		<conditionalStyle>
 			<conditionExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></conditionExpression>
 			<style backcolor="#FFFFFF"/>
 		</conditionalStyle>
 	</style>
-	<import value="nu.fgv.register.reports.util.XmlDataSource"/>
 	<subDataset name="details_dataset" resourceBundle="pluton_list" whenResourceMissingType="Key">
 		<queryString language="xPath">
 			<![CDATA[]]>
