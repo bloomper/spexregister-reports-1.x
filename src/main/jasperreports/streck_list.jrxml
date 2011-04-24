@@ -3,6 +3,12 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<style name="evenOdd" backcolor="#FFFFFF" pattern="" isBlankWhenNull="true">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></conditionExpression>
+			<style backcolor="#CCCCCC"/>
+		</conditionalStyle>
+	</style>
 	<queryString language="xPath">
 		<![CDATA[/SpexareItems/Spexare]]>
 	</queryString>
@@ -11,59 +17,122 @@
 	</field>
 	<title>
 		<band height="60" splitType="Stretch">
-			<rectangle>
-				<reportElement x="0" y="0" width="555" height="30" backcolor="#CCCCCC"/>
-			</rectangle>
-			<rectangle>
-				<reportElement mode="Opaque" x="0" y="30" width="195" height="30" backcolor="#CCCCCC"/>
-			</rectangle>
 			<textField isBlankWhenNull="false">
-				<reportElement mode="Opaque" x="5" y="31" width="190" height="29" backcolor="#CCCCCC"/>
+				<reportElement mode="Opaque" x="0" y="30" width="195" height="30" backcolor="#CCCCCC"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.fullName}]]></textFieldExpression>
 			</textField>
-			<rectangle>
-				<reportElement x="195" y="30" width="120" height="30" backcolor="#CCCCCC"/>
-			</rectangle>
-			<rectangle>
-				<reportElement x="315" y="30" width="120" height="30" backcolor="#CCCCCC"/>
-			</rectangle>
-			<rectangle>
-				<reportElement x="435" y="30" width="120" height="30" backcolor="#CCCCCC"/>
-			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="30" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="195" y="30" width="120" height="30" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="435" y="30" width="120" height="30" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="315" y="30" width="120" height="30" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
 	</title>
 	<detail>
 		<band height="20" splitType="Stretch">
-			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="20" backcolor="#CCCCCC">
-					<printWhenExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></printWhenExpression>
-				</reportElement>
-				<graphicElement>
-					<pen lineWidth="0.0"/>
-				</graphicElement>
-			</rectangle>
-			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="195" height="20" backcolor="#FFFFFF"/>
-			</rectangle>
-			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="195" y="0" width="120" height="20" backcolor="#FFFFFF"/>
-			</rectangle>
-			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="315" y="0" width="120" height="20" backcolor="#FFFFFF"/>
-			</rectangle>
-			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="435" y="0" width="120" height="20" backcolor="#FFFFFF"/>
-			</rectangle>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToTallestObject" x="5" y="0" width="190" height="20"/>
+				<reportElement style="evenOdd" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="195" height="20"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{FullName}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement style="evenOdd" mode="Opaque" x="195" y="0" width="120" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="evenOdd" mode="Opaque" x="315" y="0" width="120" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="evenOdd" mode="Opaque" x="435" y="0" width="120" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
 	</detail>
 </jasperReport>
