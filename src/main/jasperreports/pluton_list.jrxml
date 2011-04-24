@@ -3,6 +3,12 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<style name="evenOdd" backcolor="#CCCCCC" pattern="" isBlankWhenNull="true">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></conditionExpression>
+			<style backcolor="#FFFFFF"/>
+		</conditionalStyle>
+	</style>
 	<import value="nu.fgv.register.reports.util.XmlDataSource"/>
 	<subDataset name="details_dataset" resourceBundle="pluton_list" whenResourceMissingType="Key">
 		<queryString language="xPath">
@@ -98,76 +104,80 @@
 						<dataSourceExpression><![CDATA[((nu.fgv.register.reports.util.XmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/PlutonList/SpexareItems/Spexare")]]></dataSourceExpression>
 					</datasetRun>
 					<jr:listContents height="30" width="575">
-						<rectangle>
-							<reportElement x="0" y="0" width="575" height="30" backcolor="#CCCCCC">
-								<printWhenExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></printWhenExpression>
-							</reportElement>
-							<graphicElement>
-								<pen lineWidth="0.0"/>
-							</graphicElement>
-						</rectangle>
 						<textField isBlankWhenNull="true">
-							<reportElement x="65" y="0" width="100" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="65" y="0" width="100" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{FirstName}.concat(" ").concat($F{LastName})]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="165" y="0" width="55" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="165" y="0" width="55" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{BirthDate}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="220" y="0" width="145" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="220" y="0" width="145" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="365" y="0" width="145" height="30"/>
+							<reportElement style="evenOdd" mode="Opaque" x="365" y="0" width="145" height="30"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{EmailAddress}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="510" y="0" width="65" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="510" y="0" width="65" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneMobile}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="65" y="15" width="100" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="65" y="15" width="100" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{NickName}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="220" y="15" width="145" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="220" y="15" width="145" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalCode}.concat(" ").concat($F{PostalAddress})]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="510" y="15" width="65" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="510" y="15" width="65" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneHome}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement x="0" y="0" width="65" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="0" y="0" width="65" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{Role}]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement style="evenOdd" mode="Opaque" x="0" y="15" width="65" height="15"/>
+							<textElement>
+								<font fontName="SansSerif" size="9"/>
+							</textElement>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement style="evenOdd" mode="Opaque" x="165" y="15" width="55" height="15"/>
+							<textElement>
+								<font fontName="SansSerif" size="9"/>
+							</textElement>
 						</textField>
 					</jr:listContents>
 				</jr:list>
