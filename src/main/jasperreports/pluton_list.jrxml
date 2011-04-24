@@ -167,18 +167,16 @@
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{Role}]]></textFieldExpression>
 						</textField>
-						<textField isBlankWhenNull="true">
+						<staticText>
 							<reportElement style="evenOdd" mode="Opaque" x="0" y="15" width="65" height="15"/>
-							<textElement>
-								<font fontName="SansSerif" size="9"/>
-							</textElement>
-						</textField>
-						<textField isBlankWhenNull="true">
+							<textElement/>
+							<text><![CDATA[]]></text>
+						</staticText>
+						<staticText>
 							<reportElement style="evenOdd" mode="Opaque" x="165" y="15" width="55" height="15"/>
-							<textElement>
-								<font fontName="SansSerif" size="9"/>
-							</textElement>
-						</textField>
+							<textElement/>
+							<text><![CDATA[]]></text>
+						</staticText>
 					</jr:listContents>
 				</jr:list>
 			</componentElement>
