@@ -3,6 +3,12 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="1248"/>
 	<property name="ireport.y" value="0"/>
+	<style name="evenOdd" backcolor="#FFFFFF" pattern="" isBlankWhenNull="true">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></conditionExpression>
+			<style backcolor="#CCCCCC"/>
+		</conditionalStyle>
+	</style>
 	<queryString language="xPath">
 		<![CDATA[/SpexareItems/Spexare]]>
 	</queryString>
@@ -232,163 +238,155 @@
 	</title>
 	<detail>
 		<band height="20" splitType="Stretch">
-			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="2440" height="20" backcolor="#CCCCCC">
-					<printWhenExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></printWhenExpression>
-				</reportElement>
-				<graphicElement>
-					<pen lineWidth="0.0"/>
-				</graphicElement>
-			</rectangle>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="0" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="0" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{FirstName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="108" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="108" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{LastName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="216" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="216" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{NickName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="324" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="324" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="432" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="432" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalCode}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="540" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="540" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PostalAddress}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="648" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="648" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Country}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="756" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="756" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneHome}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="864" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="864" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneWork}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="972" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="972" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneMobile}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="1080" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="1080" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PhoneOther}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="1188" y="0" width="172" height="20"/>
+				<reportElement style="evenOdd" stretchType="RelativeToTallestObject" mode="Opaque" x="1188" y="0" width="172" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{EmailAddress}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="1360" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="1360" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{BirthDate}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="1468" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="1468" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{SocialSecurityNumber}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="1576" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="1576" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{ChalmersStudent}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="1684" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="1684" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Graduation}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="1792" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="1792" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{Deceased}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="1900" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="1900" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{PublishApproval}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="2008" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="2008" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{WantCirculars}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="2116" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="2116" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{WantEmailCirculars}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="2224" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="2224" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{InfoSpexMember}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="2332" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="2332" y="0" width="108" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>

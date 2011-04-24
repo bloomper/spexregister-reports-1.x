@@ -3,6 +3,12 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<style name="evenOdd" backcolor="#FFFFFF" pattern="" isBlankWhenNull="true">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></conditionExpression>
+			<style backcolor="#CCCCCC"/>
+		</conditionalStyle>
+	</style>
 	<queryString language="xPath">
 		<![CDATA[/SpexareItems/Spexare]]>
 	</queryString>
@@ -32,23 +38,15 @@
 	</title>
 	<detail>
 		<band height="20" splitType="Stretch">
-			<rectangle>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="20" backcolor="#CCCCCC">
-					<printWhenExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></printWhenExpression>
-				</reportElement>
-				<graphicElement>
-					<pen lineWidth="0.0"/>
-				</graphicElement>
-			</rectangle>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="200" height="20"/>
+				<reportElement style="evenOdd" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="200" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{FullName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="200" y="0" width="355" height="20"/>
+				<reportElement style="evenOdd" stretchType="RelativeToTallestObject" mode="Opaque" x="200" y="0" width="355" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
