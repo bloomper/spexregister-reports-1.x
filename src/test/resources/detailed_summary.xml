@@ -90,6 +90,17 @@
       <Year>2011</Year>
     </Membership>
   </Memberships>
+  <Taggings>
+    <Tagging>
+      <Tag>Tag1</Tag>
+    </Tagging>
+    <Tagging>
+      <Tag>Tag2</Tag>
+    </Tagging>
+    <Tagging>
+      <Tag>Tag3</Tag>
+    </Tagging>
+  </Taggings>
   <Activities>
     <Activity>
       <Spex>
