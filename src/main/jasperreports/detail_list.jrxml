@@ -102,14 +102,14 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.nickName}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="324" y="0" width="108" height="20" backcolor="#CCCCCC"/>
+				<reportElement mode="Opaque" x="324" y="0" width="141" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{column.streetAddress}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="432" y="0" width="108" height="20" backcolor="#CCCCCC"/>
+				<reportElement mode="Opaque" x="465" y="0" width="75" height="20" backcolor="#CCCCCC"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
@@ -246,14 +246,14 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{NickName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement style="evenOdd" mode="Opaque" x="324" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="324" y="0" width="141" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{StreetAddress}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement style="evenOdd" mode="Opaque" x="432" y="0" width="108" height="20"/>
+				<reportElement style="evenOdd" mode="Opaque" x="465" y="0" width="75" height="20"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif"/>
 				</textElement>
