@@ -4,7 +4,7 @@
     <groupId>nu.fgv.register</groupId>
     <artifactId>reports</artifactId>
     <packaging>war</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>Spexregister Reports</name>
     <inceptionYear>2011</inceptionYear>
     <url>https://register.fgv.nu/</url>
