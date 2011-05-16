@@ -112,14 +112,14 @@
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{FirstName}.concat(" ").concat($F{LastName})]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement style="evenOdd" mode="Opaque" x="165" y="0" width="55" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="165" y="0" width="60" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{BirthDate}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement style="evenOdd" mode="Opaque" x="220" y="0" width="145" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="225" y="0" width="140" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
@@ -147,7 +147,7 @@
 							<textFieldExpression class="java.lang.String"><![CDATA[$F{NickName}]]></textFieldExpression>
 						</textField>
 						<textField isBlankWhenNull="true">
-							<reportElement style="evenOdd" mode="Opaque" x="220" y="15" width="145" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="225" y="15" width="140" height="15"/>
 							<textElement>
 								<font fontName="SansSerif" size="9"/>
 							</textElement>
@@ -173,7 +173,7 @@
 							<text><![CDATA[]]></text>
 						</staticText>
 						<staticText>
-							<reportElement style="evenOdd" mode="Opaque" x="165" y="15" width="55" height="15"/>
+							<reportElement style="evenOdd" mode="Opaque" x="165" y="15" width="60" height="15"/>
 							<textElement/>
 							<text><![CDATA[]]></text>
 						</staticText>

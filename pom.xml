@@ -4,7 +4,7 @@
     <groupId>nu.fgv.register</groupId>
     <artifactId>reports</artifactId>
     <packaging>war</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <name>Spexregister Reports</name>
     <inceptionYear>2011</inceptionYear>
     <url>https://register.fgv.nu/</url>
@@ -20,7 +20,7 @@
         <url>http://fgv.nu</url>
     </organization>
     <scm>
-        <connection>scm:svn:svn://192.168.4.110:3690/spexregister/spexregister.reports/trunk</connection>
+        <connection>scm:svn:svn://192.168.4.110:3690/spexregister/spexregister.reports/tags/reports-1.0.1</connection>
     </scm>
     <developers>
         <developer>
