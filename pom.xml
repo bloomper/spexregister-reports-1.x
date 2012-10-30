@@ -228,7 +228,7 @@
                 <configuration>
                     <tomcatVersion>7.0.32</tomcatVersion>
                     <tomcatShutdownPort>8006</tomcatShutdownPort>
-                    <tomcatHttpPort>8081</tomcatHttpPort>
+                    <tomcatHttpPort>8080</tomcatHttpPort>
                 </configuration>
             </plugin>
         </plugins>
