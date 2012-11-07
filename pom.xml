@@ -4,7 +4,7 @@
     <groupId>nu.fgv.register</groupId>
     <artifactId>reports</artifactId>
     <packaging>war</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2</version>
     <name>Spexregister Reports</name>
     <inceptionYear>2011</inceptionYear>
     <url>https://register.fgv.nu/</url>
@@ -20,7 +20,7 @@
         <url>http://fgv.nu</url>
     </organization>
     <scm>
-        <connection>scm:svn:svn://192.168.4.110:3690/spexregister/spexregister.reports/trunk</connection>
+        <connection>scm:svn:svn://192.168.4.110:3690/spexregister/spexregister.reports/tags/reports-1.0.2</connection>
     </scm>
     <developers>
         <developer>
@@ -128,6 +128,15 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.ibm.icu</groupId>
+                <artifactId>icu4j</artifactId>
+                <version>3.4.4</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <build>
         <finalName>spexregister.reports</finalName>
         <plugins>
@@ -147,6 +156,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <version>2.1.1</version>
                 <configuration>
                 	<archiveClasses>true</archiveClasses>
                 </configuration>
@@ -226,7 +236,9 @@
                 <groupId>com.googlecode.t7mp</groupId>
                 <artifactId>maven-t7-plugin</artifactId>
                 <configuration>
-                    <tomcatVersion>7.0.6</tomcatVersion>
+                    <tomcatVersion>7.0.32</tomcatVersion>
+                    <tomcatShutdownPort>8006</tomcatShutdownPort>
+                    <tomcatHttpPort>8080</tomcatHttpPort>
                 </configuration>
             </plugin>
         </plugins>
